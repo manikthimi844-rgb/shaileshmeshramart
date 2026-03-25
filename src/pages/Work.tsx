@@ -4,6 +4,7 @@ import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import heroArtwork from "@/assets/hero-artwork.jpg";
+import Lightbox from "@/components/Lightbox";
 
 const categories = ["Plein Air", "Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
 
@@ -32,7 +33,9 @@ const artworks: Artwork[] = [
 
 const Work = () => {
   const [active, setActive] = useState<Category>("Plein Air");
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const filtered = artworks.filter((a) => a.category === active);
+  const lightboxImages = filtered.map((w) => ({ src: w.image, alt: w.title }));
 
   return (
     <div className="section-spacing">
@@ -45,7 +48,7 @@ const Work = () => {
           {categories.map((cat) => (
             <button
               key={cat}
-              onClick={() => setActive(cat)}
+              onClick={() => { setActive(cat); setLightboxIndex(null); }}
               className={`nav-link pb-2 transition-all ${active === cat ? "text-foreground border-b-2 border-foreground" : ""}`}
             >
               {cat}
@@ -56,7 +59,7 @@ const Work = () => {
         {/* Artworks Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filtered.map((work, i) => (
-            <div key={i} className="artwork-card">
+            <div key={i} className="artwork-card cursor-pointer" onClick={() => setLightboxIndex(i)}>
               <div className="aspect-[4/3] overflow-hidden bg-muted mb-4">
                 <img
                   src={work.image}
@@ -74,6 +77,15 @@ const Work = () => {
           ))}
         </div>
       </div>
+
+      {lightboxIndex !== null && (
+        <Lightbox
+          images={lightboxImages}
+          currentIndex={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+          onNavigate={setLightboxIndex}
+        />
+      )}
     </div>
   );
 };

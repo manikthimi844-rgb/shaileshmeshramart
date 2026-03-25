@@ -96,7 +96,7 @@
   }
 
   .artwork-card {
-    @apply group cursor-pointer;
+    cursor: pointer;
   }
 
   .artwork-card img {
@@ -104,7 +104,7 @@
   }
 
   .artwork-card:hover img {
-    @apply scale-[1.02];
+    transform: scale(1.02);
   }
 
   .nav-link {

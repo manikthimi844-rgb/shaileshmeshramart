@@ -25,7 +25,7 @@ const Contact = () => {
             <div className="space-y-6">
               <div>
                 <p className="label-text mb-1">Email</p>
-                <a href="mailto:hello@shaileshmeshram.com" className="body-text underline hover:text-foreground transition-colors">hello@shaileshmeshram.com</a>
+                <a href="mailto:shaileshmesh@gmail.com" className="body-text underline hover:text-foreground transition-colors">shaileshmesh@gmail.com</a>
               </div>
               <div>
                 <p className="label-text mb-1">Instagram</p>

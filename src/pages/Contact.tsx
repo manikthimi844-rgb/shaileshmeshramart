@@ -29,7 +29,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="label-text mb-1">Instagram</p>
-                <p className="body-text">@shaileshmeshram.art</p>
+                <a href="https://www.instagram.com/shaileshmesh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="body-text underline hover:text-foreground transition-colors">@shaileshmeshram.art</a>
               </div>
               <div>
                 <p className="label-text mb-1">Based in</p>

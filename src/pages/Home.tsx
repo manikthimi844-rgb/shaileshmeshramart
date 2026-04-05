@@ -12,7 +12,8 @@ import Lightbox from "@/components/Lightbox";
 const sliderImages = [
   { src: heroArtwork, alt: "Landscape painting by Shailesh Meshram" },
   { src: artworkWatercolor, alt: "Watercolour painting by Shailesh Meshram" },
-  { src: artworkPleinair, alt: "Plein air painting by Shailesh Meshram" },
+  { src: slider1, alt: "Cityscape painting by Shailesh Meshram" },
+  { src: slider2, alt: "Thimi Village Nepal by Shailesh Meshram" },
   { src: artworkAcrylic, alt: "Acrylic painting by Shailesh Meshram" },
   { src: artworkSketch, alt: "Sketch by Shailesh Meshram" },
 ];

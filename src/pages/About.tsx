@@ -1,76 +1,53 @@
-import artistPortrait from "@/assets/artist-portrait.jpg";
-
 const About = () => (
   <div className="section-spacing">
     <div className="page-container">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 mb-20">
-        {/* Portrait */}
-        <div className="aspect-[4/5] overflow-hidden bg-muted">
-          <img
-            src={artistPortrait}
-            alt="Shailesh Meshram in his studio"
-            className="w-full h-full object-cover"
-            loading="lazy"
-            width={800}
-            height={1000}
-          />
-        </div>
-
         {/* Bio */}
         <div className="flex flex-col justify-center">
           <p className="label-text mb-3">About</p>
           <h1 className="heading-display mb-6">Shailesh Meshram</h1>
-          <p className="body-text mb-6 italic text-muted-foreground/70">
-            [New writeup to be provided — placeholder text below]
-          </p>
-          <p className="body-text mb-6">
-            Shailesh Meshram is an Indian contemporary artist whose work explores the delicate
-            relationship between light, space, and emotion through plein air and studio practice.
-          </p>
-          <p className="body-text mb-8">
-            Each painting is not merely a depiction of place, but a record of presence — a lived moment
-            shaped by weather, silence, and shifting color. Working both outdoors and in the studio,
-            his paintings balance immediacy with reflection, spontaneity with structure.
-          </p>
-          <blockquote className="quote-block">
-            "I am less interested in painting a location, and more drawn to painting what the moment feels like."
-          </blockquote>
+          <div className="space-y-6">
+            <p className="body-text">
+              Shailesh is an old soul. He is a prolific painter despite being a full-time advertising
+              professional. Hailing from Nagpur, and trained in Applied Arts, Shailesh chose Pune as
+              his Karma Bhumi.
+            </p>
+            <p className="body-text">
+              An avid traveller, he has painted Varanasi, Kathmandu, Rome, Venice, Rajasthan and many
+              places around Pune. But his main subject is his city, Pune. Shailesh has developed a
+              deep understanding of the city, the light, textures and the essential character of the
+              city. Working a unique style of merging washes, white areas, a few colourful patches,
+              and very cleverly placed lines he creates the character with which he captures the
+              viewers imagination.
+            </p>
+            <p className="body-text">
+              He is a rare watercolour artist who has understood and mastered the art of letting the
+              painting paint itself. It is an almost spiritual experience to watch him paint. Like
+              himself the paintings exude grace, calm and character.
+            </p>
+            <p className="body-text">
+              Shailesh has several workshops, Watercolour Landscape Demonstrations and exhibitions to
+              his credit.
+            </p>
+          </div>
+        </div>
+
+        {/* Portrait placeholder */}
+        <div className="aspect-[4/5] overflow-hidden bg-muted flex items-center justify-center">
+          <p className="label-text text-muted-foreground">Artist Photo</p>
         </div>
       </div>
 
-      {/* Additional Sections */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        {[
-          {
-            title: "Artistic Philosophy",
-            text: "Each painting is an attempt to hold a moment that is already passing — to translate the intangible qualities of light, air, and atmosphere into something that can be felt on canvas.",
-          },
-          {
-            title: "Journey",
-            text: "Beginning with formal training in fine arts, Shailesh found his voice through years of plein air painting across India — from the Western Ghats to the Konkan coast.",
-          },
-          {
-            title: "Influences",
-            text: "Inspired by the Impressionists, the Barbizon school, and the rich tradition of Indian landscape painting.",
-          },
-          {
-            title: "Exhibitions",
-            text: "Exhibited across India in both solo and group shows, including galleries in Mumbai, Pune, and Delhi.",
-          },
-          {
-            title: "Awards",
-            text: "Recipient of awards and recognitions for landscape and plein air painting. Details to be updated.",
-          },
-          {
-            title: "Collections",
-            text: "Works held in private collections across India, the UK, and the United States.",
-          },
-        ].map((section, i) => (
-          <div key={i}>
-            <h3 className="heading-sub text-lg mb-3">{section.title}</h3>
-            <p className="body-text text-sm">{section.text}</p>
-          </div>
-        ))}
+      {/* Education */}
+      <div className="mb-20">
+        <h2 className="heading-section mb-8">Education</h2>
+        <div className="border-l-2 border-border pl-6">
+          <h3 className="font-serif text-lg mb-1">Bachelor of Fine Arts</h3>
+          <p className="body-text">Government Chitrakala Mahavidyalaya, Nagpur (India)</p>
+          <p className="body-text text-sm text-muted-foreground">
+            5 Years Course · Graduation Year — 1996 · 1st Grade
+          </p>
+        </div>
       </div>
     </div>
   </div>

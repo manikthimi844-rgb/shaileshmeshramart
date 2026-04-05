@@ -1,83 +1,60 @@
-const soloShows = [
-  { title: "Fleeting Light", venue: "Gallery One, Mumbai", year: "2024" },
-  { title: "Between Land and Sky", venue: "Art Corridor, Pune", year: "2023" },
-  { title: "Plein Air Studies", venue: "The Canvas Space, Delhi", year: "2022" },
-];
+import { Star } from "lucide-react";
 
-const groupShows = [
-  { title: "Contemporary Landscapes of India", venue: "National Gallery of Modern Art, Mumbai", year: "2024" },
-  { title: "The Outdoor Painters Collective", venue: "Jehangir Art Gallery, Mumbai", year: "2023" },
-  { title: "Light & Land", venue: "India Art Fair, Delhi", year: "2023" },
-];
-
-const awards = [
-  "Maharashtra State Art Award, 2023",
-  "National Plein Air Painting Competition — Selected Artist, 2022",
-  "Emerging Artists Fellowship — Shortlisted, 2021",
+const timeline = [
+  { year: "1992", desc: "Youth Festival Gulbarga — Silver Medal, Collage Competition" },
+  { year: "1993", desc: "Youth Festival Jabalpur — Gold Medal, Collage Competition" },
+  { year: "1994", desc: "PASS Group Show, South Central Zone Cultural Centre, Nagpur" },
+  { year: "2010", desc: "Painting Group Show, Bal Gandharva Kala Mandir, Pune" },
+  { year: "2011", desc: "Painting Group Show, Darpan Art Gallery, Pune" },
+  { year: "2011", desc: "Solo Painting Show, Grupshup Art Gallery, Pune" },
+  { year: "2014", desc: "Indian Art Collector Inaugural Show, Chandigarh" },
+  { year: "2014", desc: "Painting Group Show, Darpan Art Gallery, Pune" },
+  { year: "2015", desc: "1st International Watercolor Society, Turkey" },
+  { year: "2015", desc: "1st International Watercolor Society India Biennale, Delhi" },
+  { year: "2017", desc: "2nd International Watercolor Society India Biennale, Delhi" },
+  { year: "2017", desc: "Fabriano Watercolour Biennale, Italy — 1st Joint Prize, On the spot watercolour landscape", highlight: true },
+  { year: "2018", desc: "Fabriano Watercolour Biennale, Italy" },
+  { year: "2018", desc: "Among Best 50, GAWA International Watercolor Online Contest", highlight: true },
+  { year: "2018", desc: "Invited Artist, International Watercolor Festival, Ranchi" },
+  { year: "2018", desc: "Solo Painting Show, Jehangir Art Gallery, Mumbai", highlight: true },
+  { year: "2019", desc: "Solo Painting Show, Malaka Spice, Pune" },
+  { year: "2019", desc: "Group Show Nepal Diaries, Art2day Gallery, Pune" },
+  { year: "2020", desc: "Wide Canvas Ranchi, Online Contest and Group Show" },
+  { year: "2022", desc: "Mentor Master Artist, IAW Art Event, Darjeeling" },
+  { year: "2023", desc: "Group Show, Art Mandai Festival, Pune" },
+  { year: "2023", desc: "Invited Watercolor Artist, 3 Day Art Camp, Ambarnath" },
+  { year: "2023", desc: "Solo Painting Show Art By SM, Raja Ravi Varma Art Gallery, Pune" },
+  { year: "2024", desc: "Group Show, Aundh Art Heritage, Satara" },
+  { year: "2024", desc: "Chitra Sanman Puraskar, Vidarbha Gaurav Prathisthan, Nagpur — Cash Award ₹1 Lac & Sanmanpatra", highlight: true },
+  { year: "2024", desc: "Aundh Art Heritage, Group Show & Invited Artist for Demonstration" },
+  { year: "2025", desc: "Group Show of Watercolour Paintings, Selected 8 Artist Group Show" },
+  { year: "2025", desc: "Pune Watercolour Collective, Pune Theme Paintings" },
 ];
 
 const Exhibitions = () => (
   <div className="section-spacing">
     <div className="page-container">
       <p className="label-text mb-3">Exhibitions & Recognition</p>
-      <h1 className="heading-display mb-6">Exhibitions</h1>
-      <p className="body-text max-w-2xl mb-4 italic text-muted-foreground/70">
-        [Exhibition details to be updated — placeholder content below]
-      </p>
+      <h1 className="heading-display mb-6">Shows & Recognitions</h1>
       <p className="body-text max-w-2xl mb-16">
-        Shailesh Meshram's works have been presented in exhibitions that celebrate contemporary
-        landscape practice and observational painting.
+        A timeline of exhibitions, awards, and milestones in Shailesh Meshram's artistic journey.
       </p>
 
-      {/* Solo Shows */}
-      <h2 className="heading-section mb-8">Solo Shows</h2>
-      <div className="space-y-6 mb-16">
-        {soloShows.map((show, i) => (
-          <div key={i} className="flex flex-col md:flex-row md:items-center justify-between border-b border-border pb-4">
-            <div>
-              <h3 className="font-serif text-lg">{show.title}</h3>
-              <p className="body-text text-sm">{show.venue}</p>
+      <div className="space-y-0">
+        {timeline.map((item, i) => (
+          <div
+            key={i}
+            className={`flex gap-6 md:gap-10 py-5 border-b border-border ${
+              item.highlight ? "bg-accent/30" : ""
+            }`}
+          >
+            <div className="w-16 md:w-20 shrink-0 flex items-start gap-2">
+              {item.highlight && <Star className="w-4 h-4 text-yellow-500 fill-yellow-500 shrink-0 mt-0.5" />}
+              <span className="label-text whitespace-nowrap">{item.year}</span>
             </div>
-            <p className="label-text mt-1 md:mt-0">{show.year}</p>
-          </div>
-        ))}
-      </div>
-
-      {/* Group Shows */}
-      <h2 className="heading-section mb-8">Group Shows</h2>
-      <div className="space-y-6 mb-16">
-        {groupShows.map((show, i) => (
-          <div key={i} className="flex flex-col md:flex-row md:items-center justify-between border-b border-border pb-4">
-            <div>
-              <h3 className="font-serif text-lg">{show.title}</h3>
-              <p className="body-text text-sm">{show.venue}</p>
-            </div>
-            <p className="label-text mt-1 md:mt-0">{show.year}</p>
-          </div>
-        ))}
-      </div>
-
-      {/* Awards */}
-      <h2 className="heading-section mb-8">Awards & Recognition</h2>
-      <p className="body-text mb-4 italic text-muted-foreground/70">
-        [Awards list to be updated with full details]
-      </p>
-      <ul className="space-y-3 mb-16">
-        {awards.map((a, i) => (
-          <li key={i} className="body-text">{a}</li>
-        ))}
-      </ul>
-
-      {/* Media */}
-      <h2 className="heading-section mb-8">Media & Articles</h2>
-      <div className="space-y-4">
-        {[
-          { title: '"The New Plein Air Movement in India"', pub: "Art India Magazine", year: "2024" },
-          { title: '"Painting What Light Feels Like"', pub: "The Hindu Arts", year: "2023" },
-        ].map((m, i) => (
-          <div key={i} className="border-b border-border pb-4">
-            <p className="font-serif text-lg">{m.title}</p>
-            <p className="body-text text-sm">{m.pub} · {m.year}</p>
+            <p className={`body-text ${item.highlight ? "font-medium text-foreground" : ""}`}>
+              {item.desc}
+            </p>
           </div>
         ))}
       </div>

@@ -20,19 +20,17 @@ const About = () => (
         <div className="flex flex-col justify-center">
           <p className="label-text mb-3">About</p>
           <h1 className="heading-display mb-6">Shailesh Meshram</h1>
-          <p className="body-text mb-6">
-            Shailesh Meshram is an Indian contemporary painter known for capturing fleeting light
-            through plein air practice.
+          <p className="body-text mb-6 italic text-muted-foreground/70">
+            [New writeup to be provided — placeholder text below]
           </p>
-          <h2 className="heading-section mb-4">Where Observation Becomes Experience</h2>
           <p className="body-text mb-6">
-            Rooted in direct observation, Shailesh Meshram's work explores the delicate relationship
-            between light, space, and emotion. Each painting is not merely a depiction of place, but a
-            record of presence — a lived moment shaped by weather, silence, and shifting color.
+            Shailesh Meshram is an Indian contemporary artist whose work explores the delicate
+            relationship between light, space, and emotion through plein air and studio practice.
           </p>
           <p className="body-text mb-8">
-            Working both outdoors and in the studio, his paintings balance immediacy with reflection,
-            spontaneity with structure. The result is work that invites viewers to pause… and stay longer.
+            Each painting is not merely a depiction of place, but a record of presence — a lived moment
+            shaped by weather, silence, and shifting color. Working both outdoors and in the studio,
+            his paintings balance immediacy with reflection, spontaneity with structure.
           </p>
           <blockquote className="quote-block">
             "I am less interested in painting a location, and more drawn to painting what the moment feels like."
@@ -53,19 +51,19 @@ const About = () => (
           },
           {
             title: "Influences",
-            text: "Inspired by the Impressionists, the Barbizon school, and the rich tradition of Indian landscape painting. Artists like S.H. Raza, Vasudeo Kamath, and John Singer Sargent continue to inform his practice.",
+            text: "Inspired by the Impressionists, the Barbizon school, and the rich tradition of Indian landscape painting.",
           },
           {
             title: "Exhibitions",
-            text: "Exhibited across India in both solo and group shows, including galleries in Mumbai, Pune, and Delhi. His work has been featured in leading art publications.",
+            text: "Exhibited across India in both solo and group shows, including galleries in Mumbai, Pune, and Delhi.",
           },
           {
             title: "Awards",
-            text: "Recipient of the Maharashtra State Art Award and selected for the National Plein Air Painting Competition. Shortlisted for the Emerging Artists Fellowship.",
+            text: "Recipient of awards and recognitions for landscape and plein air painting. Details to be updated.",
           },
           {
             title: "Collections",
-            text: "Works held in private collections across India, the UK, and the United States. Commissioned by corporate and institutional collectors.",
+            text: "Works held in private collections across India, the UK, and the United States.",
           },
         ].map((section, i) => (
           <div key={i}>

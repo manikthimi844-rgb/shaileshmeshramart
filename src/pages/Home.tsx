@@ -2,11 +2,25 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import heroArtwork from "@/assets/hero-artwork.jpg";
 import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
+import artworkPleinair from "@/assets/artwork-pleinair.jpg";
+import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
+import artworkSketch from "@/assets/artwork-sketch.jpg";
+import ImageSlider from "@/components/ImageSlider";
 import Lightbox from "@/components/Lightbox";
+
+const sliderImages = [
+  { src: heroArtwork, alt: "Landscape painting by Shailesh Meshram" },
+  { src: artworkWatercolor, alt: "Watercolour painting by Shailesh Meshram" },
+  { src: artworkPleinair, alt: "Plein air painting by Shailesh Meshram" },
+  { src: artworkAcrylic, alt: "Acrylic painting by Shailesh Meshram" },
+  { src: artworkSketch, alt: "Sketch by Shailesh Meshram" },
+];
 
 const works = [
   { title: "Golden Hour, Western Ghats", medium: "Oil on Canvas", year: "2024", image: heroArtwork },
   { title: "Morning Mist, Konkan", medium: "Watercolour on Paper", year: "2024", image: artworkWatercolor },
+  { title: "Coastal Sunset, Ratnagiri", medium: "Acrylic on Canvas", year: "2024", image: artworkAcrylic },
+  { title: "Afternoon Study, Pune", medium: "Pencil & Wash", year: "2024", image: artworkSketch },
 ];
 
 const Home = () => {
@@ -15,39 +29,32 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="relative h-screen flex items-end">
-        <div className="absolute inset-0">
-          <img
-            src={heroArtwork}
-            alt="Atmospheric landscape painting by Shailesh Meshram"
-            className="w-full h-full object-cover"
-            width={1920}
-            height={1080}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
-        </div>
-        <div className="relative page-container pb-16 md:pb-24 text-primary-foreground">
-          <p className="label-text mb-4 !text-primary-foreground/70">Contemporary Painter</p>
-          <h1 className="heading-display !text-primary-foreground mb-4">Shailesh Meshram</h1>
-          <p className="font-serif text-xl md:text-2xl font-light text-primary-foreground/90 mb-8">
+      {/* Hero Slider */}
+      <ImageSlider images={sliderImages} interval={5000} />
+
+      {/* Intro */}
+      <section className="section-spacing">
+        <div className="page-container text-center">
+          <p className="label-text mb-4">Artist</p>
+          <h1 className="heading-display mb-6">Shailesh Meshram</h1>
+          <p className="font-serif text-xl md:text-2xl font-light text-muted-foreground mb-8">
             Painting Light, Air, and Memory.
           </p>
-          <p className="body-text max-w-xl !text-primary-foreground/80 mb-10">
+          <p className="body-text max-w-2xl mx-auto mb-10">
             Landscapes are never still. Light shifts, air moves, and moments dissolve quietly into memory.
             Through plein air and studio practice, Shailesh Meshram captures these fleeting transitions —
             translating atmosphere into paint.
           </p>
-          <Link to="/work" className="btn-outline !border-primary-foreground/50 !text-primary-foreground hover:!bg-primary-foreground hover:!text-foreground">
+          <Link to="/work" className="btn-outline">
             View Work
           </Link>
         </div>
       </section>
 
-      {/* Selected Works Preview */}
+      {/* Works Preview */}
       <section className="section-spacing">
         <div className="page-container">
-          <p className="label-text mb-3">Selected Works</p>
+          <p className="label-text mb-3">Works</p>
           <h2 className="heading-section mb-12">Recent Paintings</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {works.map((work, i) => (

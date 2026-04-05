@@ -21,6 +21,9 @@ const Exhibitions = () => (
     <div className="page-container">
       <p className="label-text mb-3">Exhibitions & Recognition</p>
       <h1 className="heading-display mb-6">Exhibitions</h1>
+      <p className="body-text max-w-2xl mb-4 italic text-muted-foreground/70">
+        [Exhibition details to be updated — placeholder content below]
+      </p>
       <p className="body-text max-w-2xl mb-16">
         Shailesh Meshram's works have been presented in exhibitions that celebrate contemporary
         landscape practice and observational painting.
@@ -56,6 +59,9 @@ const Exhibitions = () => (
 
       {/* Awards */}
       <h2 className="heading-section mb-8">Awards & Recognition</h2>
+      <p className="body-text mb-4 italic text-muted-foreground/70">
+        [Awards list to be updated with full details]
+      </p>
       <ul className="space-y-3 mb-16">
         {awards.map((a, i) => (
           <li key={i} className="body-text">{a}</li>

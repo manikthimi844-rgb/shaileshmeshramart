@@ -41,6 +41,7 @@ const Navigation = () => {
               </Link>
             </li>
           ))}
+          <li><SocialIcons iconSize={16} /></li>
         </ul>
 
         {/* Mobile toggle */}

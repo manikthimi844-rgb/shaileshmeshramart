@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-
-const Footer = () => (
+import SocialIcons from "@/components/SocialIcons";
   <footer className="border-t border-border">
     <div className="page-container py-12 md:py-16">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">

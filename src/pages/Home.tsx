@@ -38,7 +38,7 @@ const Home = () => {
           <p className="label-text mb-4">Artist</p>
           <h1 className="heading-display mb-6">Shailesh Meshram</h1>
           <p className="font-serif text-xl md:text-2xl font-light text-muted-foreground mb-8">
-            Painting Light, Air, and Memory.
+            Artist
           </p>
           <p className="body-text max-w-2xl mx-auto mb-10">
             Landscapes are never still. Light shifts, air moves, and moments dissolve quietly into memory.

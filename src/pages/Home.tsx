@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import heroArtwork from "@/assets/hero-artwork.jpg";
 import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import slider1 from "@/assets/slider-1.jpg";
-import thimiVillage from "@/assets/thimi-village-nepal.jpg";
-import img0293 from "@/assets/img-0293.jpg";
+import slider2 from "@/assets/slider-2.jpg";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import ImageSlider from "@/components/ImageSlider";
@@ -12,8 +11,8 @@ import Lightbox from "@/components/Lightbox";
 
 const sliderImages = [
   { src: slider1, alt: "Painting by Shailesh Meshram" },
-  { src: thimiVillage, alt: "Thimi Village Nepal by Shailesh Meshram" },
-  { src: img0293, alt: "Painting by Shailesh Meshram" },
+  { src: slider2, alt: "Painting by Shailesh Meshram" },
+  { src: heroArtwork, alt: "Painting by Shailesh Meshram" },
 ];
 
 const works = [

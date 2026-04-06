@@ -28,7 +28,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
         </div>
         <div className="relative page-container pb-16 md:pb-24 text-primary-foreground">
-          <p className="label-text mb-4 !text-primary-foreground/70">Contemporary Painter</p>
+          <p className="label-text mb-4 !text-primary-foreground/70">Contemporary Artist</p>
           <h1 className="heading-display !text-primary-foreground mb-4">Shailesh Meshram</h1>
           <p className="font-serif text-xl md:text-2xl font-light text-primary-foreground/90 mb-8">
             Painting Light, Air, and Memory.

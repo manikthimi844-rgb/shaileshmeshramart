@@ -11,6 +11,9 @@ import watercolorStreet from "@/assets/watercolor-street.jpg";
 import watercolorDoor from "@/assets/watercolor-door.jpg";
 import watercolorMountains from "@/assets/watercolor-mountains.jpg";
 import watercolorScene from "@/assets/watercolor-scene.jpg";
+import watercolorBoat from "@/assets/watercolor-boat.jpg";
+import watercolorVintagePune from "@/assets/watercolor-vintage-pune.jpg";
+import watercolorVintagePune2 from "@/assets/watercolor-vintage-pune2.jpg";
 import Lightbox from "@/components/Lightbox";
 
 const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;

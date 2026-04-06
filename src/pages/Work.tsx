@@ -7,6 +7,10 @@ import artworkSketch from "@/assets/artwork-sketch.jpg";
 import heroArtwork from "@/assets/hero-artwork.jpg";
 import artworkPleinair from "@/assets/artwork-pleinair.jpg";
 import watercolorGodaGhat from "@/assets/watercolor-goda-ghat.jpg";
+import watercolorStreet from "@/assets/watercolor-street.jpg";
+import watercolorDoor from "@/assets/watercolor-door.jpg";
+import watercolorMountains from "@/assets/watercolor-mountains.jpg";
+import watercolorScene from "@/assets/watercolor-scene.jpg";
 import Lightbox from "@/components/Lightbox";
 
 const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
@@ -27,6 +31,10 @@ interface Artwork {
 const artworks: Artwork[] = [
   // Watercolours (12)
   { title: "Goda Ghat, Nashik", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorGodaGhat, category: "Watercolours" },
+  { title: "Street Scene", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorStreet, category: "Watercolours" },
+  { title: "Old Door", size: "14 × 18 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: watercolorDoor, category: "Watercolours" },
+  { title: "Mountain Village", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorMountains, category: "Watercolours" },
+  { title: "Watercolour Study", size: "12 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorScene, category: "Watercolours" },
   { title: "Lake Reflections, Lonavala", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
   { title: "Misty Peaks", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
   { title: "Monsoon Fields", size: "14 × 18 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },

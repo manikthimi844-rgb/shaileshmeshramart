@@ -1,20 +1,21 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import heroArtwork from "@/assets/hero-artwork.jpg";
+import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import kashi from "@/assets/kashi.jpg";
 import puneMorning from "@/assets/pune_morning.jpg";
 import watercolorStreet from "@/assets/watercolor-street.jpg";
 import watercolorGodaGhat from "@/assets/watercolor-goda-ghat.jpg";
 import watercolorVintagePune from "@/assets/watercolor-vintage-pune.jpg";
-import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import ImageSlider from "@/components/ImageSlider";
 import Lightbox from "@/components/Lightbox";
 
 const sliderImages = [
-  { src: kashi, alt: "Kashi painting by Shailesh Meshram" },
+  { src: kashi, alt: "Kashi by Shailesh Meshram" },
   { src: puneMorning, alt: "Pune Morning by Shailesh Meshram" },
-  { src: watercolorStreet, alt: "Street scene by Shailesh Meshram" },
+  { src: watercolorStreet, alt: "Street Scene by Shailesh Meshram" },
   { src: watercolorGodaGhat, alt: "Goda Ghat by Shailesh Meshram" },
   { src: watercolorVintagePune, alt: "Vintage Pune by Shailesh Meshram" },
 ];
@@ -44,10 +45,10 @@ const Home = () => {
             Artist
           </p>
           <p className="body-text max-w-2xl mx-auto mb-10">
-          Capturing the soul of Pune and beyond — one watercolour 
-stroke at a time. Through light, texture and the quiet 
-poetry of everyday scenes, Shailesh Meshram brings 
-cities to life on paper.
+            Capturing the soul of Pune and beyond — one watercolour 
+            stroke at a time. Through light, texture and the quiet 
+            poetry of everyday scenes, Shailesh Meshram brings 
+            cities to life on paper.
           </p>
           <Link to="/work" className="btn-outline">
             View Work

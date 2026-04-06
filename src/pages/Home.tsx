@@ -4,7 +4,7 @@ import heroArtwork from "@/assets/hero-artwork.jpg";
 import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import slider1 from "@/assets/slider-1.jpg";
 import slider2 from "@/assets/slider-2.jpg";
-import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
+import img0293 from "@/assets/img_0293.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import ImageSlider from "@/components/ImageSlider";
 import Lightbox from "@/components/Lightbox";

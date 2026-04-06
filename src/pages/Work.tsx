@@ -17,6 +17,7 @@ import watercolorScene from "@/assets/watercolor-scene.jpg";
 import watercolorBoat from "@/assets/watercolor-boat.jpg";
 import watercolorVintagePune from "@/assets/watercolor-vintage-pune.jpg";
 import watercolorVintagePune2 from "@/assets/watercolor-vintage-pune2.jpg";
+import watercolorKashi from "@/assets/kashi.jpg";
 import Lightbox from "@/components/Lightbox";
 
 const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
@@ -42,7 +43,7 @@ const artworks: Artwork[] = [
   { title: "Mountain Village", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorMountains, category: "Watercolours" },
   { title: "Watercolour Study", size: "12 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolor5, category: "Watercolours" },
   { title: "Lake Reflections, Lonavala", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolor6, category: "Watercolours" },
-  { title: "Misty Peaks", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: watercolor7, category: "Watercolours" },
+  { title: "Kashi Ghat", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorKashi, category: "Watercolours" },
   { title: "Deccan Plateau at Dusk", size: "15 × 22 in", medium: "Watercolour on Paper", year: "2024", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
   { title: "Temple by the Lake", size: "11 × 14 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
   { title: "Coastal Morning", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },

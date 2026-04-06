@@ -47,9 +47,9 @@ const artworks: Artwork[] = [
   { title: "Coastal Morning", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
   { title: "Paddy Fields, Konkan", size: "12 × 18 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
   { title: "Hilltop Village", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
-  { title: "Forest Stream", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
-  { title: "Evening Clouds, Pune", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
-  { title: "Valley Road", size: "12 × 16 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
+  { title: "Boat at Sea", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: watercolorBoat, category: "Watercolours" },
+  { title: "Vintage Pune", size: "14 × 14 in", medium: "Watercolour on Paper", year: "2022", availability: "Available", image: watercolorVintagePune, category: "Watercolours" },
+  { title: "Vintage Pune Street", size: "14 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorVintagePune2, category: "Watercolours" },
 
   // Acrylics (12)
   { title: "Coastal Sunset, Ratnagiri", size: "30 × 40 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic1, category: "Acrylics" },

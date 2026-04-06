@@ -2,22 +2,18 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import heroArtwork from "@/assets/hero-artwork.jpg";
 import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
-import kashi from "@/assets/kashi.jpg";
-import puneMorning from "@/assets/pune_morning.jpg";
-import watercolorStreet from "@/assets/watercolor-street.jpg";
-import watercolorGodaGhat from "@/assets/watercolor-goda-ghat.jpg";
-import watercolorVintagePune from "@/assets/watercolor-vintage-pune.jpg";
+import slider1 from "@/assets/slider-1.jpg";
+import thimiVillage from "@/assets/Thimi_Village_Nepal.JPG";
+import img0293 from "@/assets/IMG_0293.JPG";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import ImageSlider from "@/components/ImageSlider";
 import Lightbox from "@/components/Lightbox";
 
 const sliderImages = [
-  { src: kashi, alt: "Kashi by Shailesh Meshram" },
-  { src: puneMorning, alt: "Pune Morning by Shailesh Meshram" },
-  { src: watercolorStreet, alt: "Street Scene by Shailesh Meshram" },
-  { src: watercolorGodaGhat, alt: "Goda Ghat by Shailesh Meshram" },
-  { src: watercolorVintagePune, alt: "Vintage Pune by Shailesh Meshram" },
+  { src: slider1, alt: "Painting by Shailesh Meshram" },
+  { src: thimiVillage, alt: "Thimi Village Nepal by Shailesh Meshram" },
+  { src: img0293, alt: "Painting by Shailesh Meshram" },
 ];
 
 const works = [

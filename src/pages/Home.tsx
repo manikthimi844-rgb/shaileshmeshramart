@@ -1,21 +1,22 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import heroArtwork from "@/assets/hero-artwork.jpg";
+import kashi from "@/assets/kashi.jpg";
+import puneMorning from "@/assets/pune_morning.jpg";
+import watercolorStreet from "@/assets/watercolor-street.jpg";
+import watercolorGodaGhat from "@/assets/watercolor-goda-ghat.jpg";
+import watercolorVintagePune from "@/assets/watercolor-vintage-pune.jpg";
 import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
-import slider1 from "@/assets/slider-1.jpg";
-import slider2 from "@/assets/slider-2.jpg";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import ImageSlider from "@/components/ImageSlider";
 import Lightbox from "@/components/Lightbox";
 
 const sliderImages = [
-  { src: heroArtwork, alt: "Landscape painting by Shailesh Meshram" },
-  { src: artworkWatercolor, alt: "Watercolour painting by Shailesh Meshram" },
-  { src: slider1, alt: "Cityscape painting by Shailesh Meshram" },
-  { src: slider2, alt: "Thimi Village Nepal by Shailesh Meshram" },
-  { src: artworkAcrylic, alt: "Acrylic painting by Shailesh Meshram" },
-  { src: artworkSketch, alt: "Sketch by Shailesh Meshram" },
+  { src: kashi, alt: "Kashi painting by Shailesh Meshram" },
+  { src: puneMorning, alt: "Pune Morning by Shailesh Meshram" },
+  { src: watercolorStreet, alt: "Street scene by Shailesh Meshram" },
+  { src: watercolorGodaGhat, alt: "Goda Ghat by Shailesh Meshram" },
+  { src: watercolorVintagePune, alt: "Vintage Pune by Shailesh Meshram" },
 ];
 
 const works = [
@@ -43,9 +44,10 @@ const Home = () => {
             Artist
           </p>
           <p className="body-text max-w-2xl mx-auto mb-10">
-            Landscapes are never still. Light shifts, air moves, and moments dissolve quietly into memory.
-            Through plein air and studio practice, Shailesh Meshram captures these fleeting transitions —
-            translating atmosphere into paint.
+          Capturing the soul of Pune and beyond — one watercolour 
+stroke at a time. Through light, texture and the quiet 
+poetry of everyday scenes, Shailesh Meshram brings 
+cities to life on paper.
           </p>
           <Link to="/work" className="btn-outline">
             View Work

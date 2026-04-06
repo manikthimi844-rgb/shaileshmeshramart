@@ -6,6 +6,7 @@ import acrylic2 from "@/assets/acrylic-2.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import heroArtwork from "@/assets/hero-artwork.jpg";
 import artworkPleinair from "@/assets/artwork-pleinair.jpg";
+import watercolorGodaGhat from "@/assets/watercolor-goda-ghat.jpg";
 import Lightbox from "@/components/Lightbox";
 
 const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
@@ -25,6 +26,7 @@ interface Artwork {
 // Placeholder artworks — images and details to be replaced
 const artworks: Artwork[] = [
   // Watercolours (12)
+  { title: "Goda Ghat, Nashik", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorGodaGhat, category: "Watercolours" },
   { title: "Lake Reflections, Lonavala", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
   { title: "Misty Peaks", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
   { title: "Monsoon Fields", size: "14 × 18 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },

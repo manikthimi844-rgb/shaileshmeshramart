@@ -23,7 +23,7 @@ const ImageSlider = ({ images, interval = 5000 }: ImageSliderProps) => {
   }, [next, interval]);
 
   return (
-    <div className="relative w-full h-[40vh] sm:h-[55vh] md:h-[70vh] lg:h-screen overflow-hidden">
+   <div className="relative w-full h-[40vh] sm:h-[55vh] md:h-[70vh] lg:h-screen overflow-hidden group">
       {images.map((img, i) => (
         <div
           key={i}
@@ -44,14 +44,14 @@ const ImageSlider = ({ images, interval = 5000 }: ImageSliderProps) => {
       {/* Navigation arrows */}
       <button
         onClick={prev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/30 backdrop-blur-sm p-2 hover:bg-background/50 transition-colors"
+       className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/30 backdrop-blur-sm p-2 hover:bg-background/50 transition-colors opacity-0 hover:opacity-100 group-hover:opacity-100 transition-opacity"
         aria-label="Previous image"
       >
         <ChevronLeft className="w-6 h-6 text-primary-foreground" />
       </button>
       <button
         onClick={next}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/30 backdrop-blur-sm p-2 hover:bg-background/50 transition-colors"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/30 backdrop-blur-sm p-2 hover:bg-background/50 transition-colors opacity-0 hover:opacity-100 group-hover:opacity-100 transition-opacity"
         aria-label="Next image"
       >
         <ChevronRight className="w-6 h-6 text-primary-foreground" />

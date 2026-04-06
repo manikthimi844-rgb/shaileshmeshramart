@@ -1,6 +1,8 @@
 import { useState } from "react";
 import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
+import acrylic1 from "@/assets/acrylic-1.jpg";
+import acrylic2 from "@/assets/acrylic-2.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import heroArtwork from "@/assets/hero-artwork.jpg";
 import artworkPleinair from "@/assets/artwork-pleinair.jpg";

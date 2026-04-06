@@ -7,8 +7,8 @@ interface SocialIconsProps {
 
 const socials = [
   { icon: Instagram, href: "https://www.instagram.com/shaileshmesh", label: "Instagram" },
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Facebook, href: "http://facebook.com/shailesh.meshram.12/", label: "Facebook" },
+  { icon: Youtube, href: "https://www.youtube.com/@ArtistShaileshMeshram", label: "YouTube" },
 ];
 
 const SocialIcons = ({ className = "", iconSize = 18 }: SocialIconsProps) => (

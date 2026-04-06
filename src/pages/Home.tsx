@@ -38,7 +38,7 @@ const Home = () => {
         <ImageSlider images={sliderImages} interval={5000} />
         <div className="absolute inset-0 flex items-center z-10 pointer-events-none">
           <div className="page-container">
-            <div className="max-w-lg pointer-events-auto">
+           <div className="max-w-lg pointer-events-auto text-left ml-8 md:ml-16">
               <p className="label-text mb-4 text-white/80 tracking-widest">
                 Artist
               </p>

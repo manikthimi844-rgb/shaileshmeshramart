@@ -1,12 +1,11 @@
 import { useState } from "react";
-import artworkPleinair from "@/assets/artwork-pleinair.jpg";
 import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import heroArtwork from "@/assets/hero-artwork.jpg";
 import Lightbox from "@/components/Lightbox";
 
-const categories = ["Plein Air", "Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
+const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
 
 type Category = typeof categories[number];
 

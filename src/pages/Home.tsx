@@ -1,20 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-import slider1 from "@/assets/slider-1.jpg";
-import thimiVillage from "@/assets/thimi-village-nepal.jpg";
-import img0293 from "@/assets/img-0293.jpg";
-
-import ImageSlider from "@/components/ImageSlider";
+import heroArtwork from "@/assets/hero-artwork.jpg";
+import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import Lightbox from "@/components/Lightbox";
 
-const sliderImages = [
-  { src: slider1, alt: "Painting by Shailesh Meshram" },
-  { src: thimiVillage, alt: "Thimi Village Nepal by Shailesh Meshram" },
-  { src: img0293, alt: "Painting by Shailesh Meshram" },
+const works = [
+  { title: "Golden Hour, Western Ghats", medium: "Oil on Canvas", year: "2024", image: heroArtwork },
+  { title: "Morning Mist, Konkan", medium: "Watercolour on Paper", year: "2024", image: artworkWatercolor },
 ];
-
-
 
 const Home = () => {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
@@ -22,33 +15,39 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero Slider with Text Overlay */}
-      <div className="relative">
-        <ImageSlider images={sliderImages} interval={5000} />
-        <div style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', zIndex: 10}}>
-          <div style={{paddingLeft: '60px', maxWidth: '500px'}}>
-            <p style={{color: 'rgba(255,255,255,0.8)', letterSpacing: '3px', fontSize: '12px', marginBottom: '16px', textTransform: 'uppercase'}}>
-              Contemporary Artist
-            </p>
-            <h1 style={{color: 'white', fontSize: '3rem', fontFamily: 'serif', marginBottom: '16px', textShadow: '2px 2px 8px rgba(0,0,0,0.5)'}}>
-              Shailesh Meshram
-            </h1>
-            <p style={{color: 'rgba(255,255,255,0.9)', fontSize: '1.2rem', fontFamily: 'serif', marginBottom: '32px', textShadow: '1px 1px 4px rgba(0,0,0,0.5)'}}>
-              Capturing light before it disappears
-            </p>
-            <Link 
-              to="/work" 
-              style={{border: '1px solid white', color: 'white', padding: '12px 24px', textDecoration: 'none', fontSize: '14px', letterSpacing: '2px', textTransform: 'uppercase'}}>
-              View Work
-            </Link>
-          </div>
+      {/* Hero */}
+      <section className="relative h-screen flex items-end">
+        <div className="absolute inset-0">
+          <img
+            src={heroArtwork}
+            alt="Atmospheric landscape painting by Shailesh Meshram"
+            className="w-full h-full object-cover"
+            width={1920}
+            height={1080}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
         </div>
-      </div>
+        <div className="relative page-container pb-16 md:pb-24 text-primary-foreground">
+          <p className="label-text mb-4 !text-primary-foreground/70">Contemporary Artist</p>
+          <h1 className="heading-display !text-primary-foreground mb-4">Shailesh Meshram</h1>
+          <p className="font-serif text-xl md:text-2xl font-light text-primary-foreground/90 mb-8">
+            Painting Light, Air, and Memory.
+          </p>
+          <p className="body-text max-w-xl !text-primary-foreground/80 mb-10">
+            Landscapes are never still. Light shifts, air moves, and moments dissolve quietly into memory.
+            Through plein air and studio practice, Shailesh Meshram captures these fleeting transitions —
+            translating atmosphere into paint.
+          </p>
+          <Link to="/work" className="btn-outline !border-primary-foreground/50 !text-primary-foreground hover:!bg-primary-foreground hover:!text-foreground">
+            View Work
+          </Link>
+        </div>
+      </section>
 
-      {/* Works Preview */}
+      {/* Selected Works Preview */}
       <section className="section-spacing">
         <div className="page-container">
-          <p className="label-text mb-3">Works</p>
+          <p className="label-text mb-3">Selected Works</p>
           <h2 className="heading-section mb-12">Recent Paintings</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {works.map((work, i) => (

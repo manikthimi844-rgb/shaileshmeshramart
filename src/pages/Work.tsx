@@ -1,19 +1,6 @@
 import { useState } from "react";
 import Lightbox from "@/components/Lightbox";
 
-// Correct imports for images that actually exist in your public folder
-import godaghat from "@/assets/Goda Ghat, Nashik.jpg";
-import img0997 from "@/assets/IMG_0997.JPG";
-import img4683 from "@/assets/IMG_4683.JPG";
-import painting2 from "@/assets/Painting2.jpg";
-import kashi from "@/assets/kashi.jpg";
-import heroArtwork from "@/assets/hero-artwork.jpg";
-import vintagePune from "@/assets/Vintage Pune.jpg";
-import vintagePune2 from "@/assets/Vintage Pune14x16(1).jpg";
-
-// Note: Many of your uploaded screenshots are also watercolours/acrylics. 
-// You can add more later by importing them the same way.
-
 const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
 type Category = typeof categories[number];
 
@@ -23,7 +10,7 @@ interface Artwork {
   medium: string;
   year: string;
   availability: string;
-  image: string;
+  image: string;        // Now a string path instead of imported module
   category: Category;
 }
 
@@ -35,7 +22,7 @@ const artworks: Artwork[] = [
     medium: "Watercolour on Paper", 
     year: "2024", 
     availability: "Available", 
-    image: godaghat, 
+    image: "/Goda Ghat, Nashik.jpg", 
     category: "Watercolours" 
   },
   { 
@@ -44,7 +31,7 @@ const artworks: Artwork[] = [
     medium: "Watercolour on Paper", 
     year: "2024", 
     availability: "Available", 
-    image: img0997, 
+    image: "/IMG_0997.JPG", 
     category: "Watercolours" 
   },
   { 
@@ -53,7 +40,7 @@ const artworks: Artwork[] = [
     medium: "Watercolour on Paper", 
     year: "2024", 
     availability: "Available", 
-    image: img4683, 
+    image: "/IMG_4683.JPG", 
     category: "Watercolours" 
   },
   { 
@@ -62,7 +49,7 @@ const artworks: Artwork[] = [
     medium: "Watercolour on Paper", 
     year: "2024", 
     availability: "Available", 
-    image: painting2, 
+    image: "/Painting2.jpg", 
     category: "Watercolours" 
   },
   { 
@@ -71,7 +58,7 @@ const artworks: Artwork[] = [
     medium: "Watercolour on Paper", 
     year: "2024", 
     availability: "Available", 
-    image: kashi, 
+    image: "/kashi.jpg", 
     category: "Watercolours" 
   },
   { 
@@ -80,7 +67,7 @@ const artworks: Artwork[] = [
     medium: "Watercolour on Paper", 
     year: "2022", 
     availability: "Available", 
-    image: vintagePune, 
+    image: "/Vintage Pune.jpg", 
     category: "Watercolours" 
   },
   { 
@@ -89,7 +76,7 @@ const artworks: Artwork[] = [
     medium: "Watercolour on Paper", 
     year: "2024", 
     availability: "Available", 
-    image: vintagePune2, 
+    image: "/Vintage Pune14x16(1).jpg", 
     category: "Watercolours" 
   },
   { 
@@ -98,38 +85,31 @@ const artworks: Artwork[] = [
     medium: "Watercolour on Paper", 
     year: "2024", 
     availability: "Available", 
-    image: heroArtwork, 
+    image: "/hero-artwork.jpg", 
     category: "Watercolours" 
   },
 
-  // ==================== ACRYLICS ====================
+  // Add more Watercolours here later if you want (just copy the block)
+
+  // ==================== ACRYLICS (using placeholder for now) ====================
   { 
     title: "Venice Canal", 
     size: "12 × 12 in", 
     medium: "Acrylic on Canvas", 
     year: "2023", 
     availability: "Available", 
-    image: heroArtwork, // temporary - replace with real acrylic image later
-    category: "Acrylics" 
-  },
-  { 
-    title: "Pune Alley", 
-    size: "12 × 12 in", 
-    medium: "Acrylic on Canvas", 
-    year: "2023", 
-    availability: "Available", 
-    image: heroArtwork, // temporary
+    image: "/hero-artwork.jpg", 
     category: "Acrylics" 
   },
 
-  // ==================== SKETCHBOOKS & STUDIES ====================
+  // ==================== SKETCHBOOKS & STUDIES (using placeholder) ====================
   { 
     title: "Afternoon Study, Pune", 
     size: "9 × 12 in", 
     medium: "Pencil & Wash", 
     year: "2024", 
     availability: "Not for Sale", 
-    image: heroArtwork, // temporary - replace later
+    image: "/hero-artwork.jpg", 
     category: "Sketchbooks & Studies" 
   },
 ];

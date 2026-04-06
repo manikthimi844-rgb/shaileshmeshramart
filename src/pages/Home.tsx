@@ -33,28 +33,30 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero Slider */}
-      <ImageSlider images={sliderImages} interval={5000} />
-
-      {/* Intro */}
-      <section className="section-spacing">
-        <div className="page-container text-center">
-          <p className="label-text mb-4">Artist</p>
-          <h1 className="heading-display mb-6">Shailesh Meshram</h1>
-          <p className="font-serif text-xl md:text-2xl font-light text-muted-foreground mb-8">
-            Artist
-          </p>
-          <p className="body-text max-w-2xl mx-auto mb-10">
-            Capturing the soul of Pune and beyond — one watercolour 
-            stroke at a time. Through light, texture and the quiet 
-            poetry of everyday scenes, Shailesh Meshram brings 
-            cities to life on paper.
-          </p>
-          <Link to="/work" className="btn-outline">
-            View Work
-          </Link>
+      {/* Hero Slider with Text Overlay */}
+      <div className="relative">
+        <ImageSlider images={sliderImages} interval={5000} />
+        <div className="absolute inset-0 flex items-center z-10 pointer-events-none">
+          <div className="page-container">
+            <div className="max-w-lg pointer-events-auto">
+              <p className="label-text mb-4 text-white/80 tracking-widest">
+                Artist
+              </p>
+              <h1 className="heading-display mb-6 text-white drop-shadow-lg">
+                Shailesh Meshram
+              </h1>
+              <p className="font-serif text-xl font-light text-white/90 mb-8 drop-shadow-md">
+                Capturing light before it disappears
+              </p>
+              <Link 
+                to="/work" 
+                className="btn-outline border-white text-white hover:bg-white hover:text-black">
+                View Work
+              </Link>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
 
       {/* Works Preview */}
       <section className="section-spacing">

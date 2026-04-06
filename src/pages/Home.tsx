@@ -36,24 +36,22 @@ const Home = () => {
       {/* Hero Slider with Text Overlay */}
       <div className="relative">
         <ImageSlider images={sliderImages} interval={5000} />
-       <div className="absolute inset-0 flex items-center justify-start z-10 pointer-events-none">
-          <div className="page-container">
-           <div className="max-w-lg pointer-events-auto text-left ml-8 md:ml-16">
-              <p className="label-text mb-4 text-white/80 tracking-widest">
-                Artist
-              </p>
-              <h1 className="heading-display mb-6 text-white drop-shadow-lg">
-                Shailesh Meshram
-              </h1>
-              <p className="font-serif text-xl font-light text-white/90 mb-8 drop-shadow-md">
-                Capturing light before it disappears
-              </p>
-              <Link 
-                to="/work" 
-                className="btn-outline border-white text-white hover:bg-white hover:text-black">
-                View Work
-              </Link>
-            </div>
+        <div style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', zIndex: 10}}>
+          <div style={{paddingLeft: '60px', maxWidth: '500px'}}>
+            <p style={{color: 'rgba(255,255,255,0.8)', letterSpacing: '3px', fontSize: '12px', marginBottom: '16px', textTransform: 'uppercase'}}>
+              Artist
+            </p>
+            <h1 style={{color: 'white', fontSize: '3rem', fontFamily: 'serif', marginBottom: '16px', textShadow: '2px 2px 8px rgba(0,0,0,0.5)'}}>
+              Shailesh Meshram
+            </h1>
+            <p style={{color: 'rgba(255,255,255,0.9)', fontSize: '1.2rem', fontFamily: 'serif', marginBottom: '32px', textShadow: '1px 1px 4px rgba(0,0,0,0.5)'}}>
+              Capturing light before it disappears
+            </p>
+            <Link 
+              to="/work" 
+              style={{border: '1px solid white', color: 'white', padding: '12px 24px', textDecoration: 'none', fontSize: '14px', letterSpacing: '2px', textTransform: 'uppercase'}}>
+              View Work
+            </Link>
           </div>
         </div>
       </div>

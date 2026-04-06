@@ -37,7 +37,7 @@ const artworks: Artwork[] = [
   { title: "Street Scene", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorStreet, category: "Watercolours" },
   { title: "Old Door", size: "14 × 18 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: watercolorDoor, category: "Watercolours" },
   { title: "Mountain Village", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorMountains, category: "Watercolours" },
-  { title: "Watercolour Study", size: "12 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorScene, category: "Watercolours" },
+  { title: "Watercolour Study", size: "12 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: "/e57c043f-2507-4288-930c-fe03f705f275.jpg", category: "Watercolours" },
   { title: "Lake Reflections, Lonavala", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
   { title: "Misty Peaks", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
   { title: "Monsoon Fields", size: "14 × 18 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },

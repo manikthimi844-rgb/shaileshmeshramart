@@ -5,6 +5,9 @@ import acrylic1 from "@/assets/acrylic-1.jpg";
 import acrylic2 from "@/assets/acrylic-2.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import heroArtwork from "@/assets/hero-artwork.jpg";
+import watercolor5 from "@/assets/watercolor-5.jpg";
+import watercolor6 from "@/assets/watercolor-6.jpg";
+import watercolor7 from "@/assets/watercolor-7.jpg";
 import artworkPleinair from "@/assets/artwork-pleinair.jpg";
 import watercolorGodaGhat from "@/assets/watercolor-goda-ghat.jpg";
 import watercolorStreet from "@/assets/watercolor-street.jpg";
@@ -37,9 +40,9 @@ const artworks: Artwork[] = [
   { title: "Street Scene", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorStreet, category: "Watercolours" },
   { title: "Old Door", size: "14 × 18 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: watercolorDoor, category: "Watercolours" },
   { title: "Mountain Village", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorMountains, category: "Watercolours" },
-  { title: "Watercolour Study", size: "12 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: "/e57c043f-2507-4288-930c-fe03f705f275.jpg", category: "Watercolours" },
-  { title: "Lake Reflections, Lonavala", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
-  { title: "Misty Peaks", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
+  { title: "Watercolour Study", size: "12 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolor5, category: "Watercolours" },
+  { title: "Lake Reflections, Lonavala", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolor6, category: "Watercolours" },
+  { title: "Misty Peaks", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: watercolor7, category: "Watercolours" },
   { title: "Monsoon Fields", size: "14 × 18 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
   { title: "River Bend, Kolad", size: "12 × 16 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
   { title: "Deccan Plateau at Dusk", size: "15 × 22 in", medium: "Watercolour on Paper", year: "2024", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },

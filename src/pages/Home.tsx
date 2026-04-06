@@ -6,14 +6,14 @@ import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import slider1 from "@/assets/slider-1.jpg";
 import slider2 from "@/assets/slider-2.jpg";
-import img0293 from "@/assets/img_0293.jpg";
+import slide3 from "@/assets/Screenshot-2026-04-06.jpg";
 import ImageSlider from "@/components/ImageSlider";
 import Lightbox from "@/components/Lightbox";
 
 const sliderImages = [
   { src: slider1, alt: "Painting by Shailesh Meshram" },
   { src: slider2, alt: "Painting by Shailesh Meshram" },
-  { src: img0293, alt: "Painting by Shailesh Meshram" },
+  { src: slide3, alt: "Painting by Shailesh Meshram" },
 ];
 
 const works = [

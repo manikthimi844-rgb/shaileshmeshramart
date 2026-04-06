@@ -23,7 +23,7 @@ const ImageSlider = ({ images, interval = 5000 }: ImageSliderProps) => {
   }, [next, interval]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[40vh] sm:h-[55vh] md:h-[70vh] lg:h-screen overflow-hidden">
       {images.map((img, i) => (
         <div
           key={i}

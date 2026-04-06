@@ -20,9 +20,7 @@ interface Artwork {
 }
 
 const artworks: Artwork[] = [
-  { title: "Golden Hour, Western Ghats", size: "24 × 36 in", medium: "Oil on Canvas", year: "2024", availability: "Available", image: artworkPleinair, category: "Plein Air" },
-  { title: "Morning Light, Sahyadris", size: "18 × 24 in", medium: "Oil on Board", year: "2024", availability: "Sold", image: heroArtwork, category: "Plein Air" },
-  { title: "Monsoon Valley", size: "12 × 16 in", medium: "Oil on Canvas", year: "2023", availability: "Available", image: artworkPleinair, category: "Plein Air" },
+ 
   { title: "Lake Reflections, Lonavala", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
   { title: "Misty Peaks", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
   { title: "Coastal Sunset, Ratnagiri", size: "30 × 40 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: artworkAcrylic, category: "Acrylics" },

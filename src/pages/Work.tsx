@@ -29,7 +29,7 @@ const artworks: Artwork[] = [
 ];
 
 const Work = () => {
-  const [active, setActive] = useState<Category>("Plein Air");
+  const [active, setActive] = useState<Category>("watercolor");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const filtered = artworks.filter((a) => a.category === active);
   const lightboxImages = filtered.map((w) => ({ src: w.image, alt: w.title }));

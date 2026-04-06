@@ -25,7 +25,7 @@ const Navigation = () => {
             <span className="font-serif text-lg md:text-xl font-medium tracking-wide text-foreground leading-tight">
               Shailesh Meshram
             </span>
-            <img src={logo} alt="Art by SM" className="h-6 md:h-7 mt-0.5" />
+            <img src={logo} alt="Art by SM" className="h-8 md:h-9 mt-0.7" />
           </div>
         </Link>
 

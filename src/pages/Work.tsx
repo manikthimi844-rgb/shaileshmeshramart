@@ -18,6 +18,10 @@ import watercolorBoat from "@/assets/watercolor-boat.jpg";
 import watercolorVintagePune from "@/assets/watercolor-vintage-pune.jpg";
 import watercolorVintagePune2 from "@/assets/watercolor-vintage-pune2.jpg";
 import watercolorKashi from "@/assets/kashi.jpg";
+import puneMorning from "@/assets/pune_morning.jpg";
+import watercolorScene1 from "@/assets/Screenshot_2026-04-06_101459.jpg";
+import watercolorScene2 from "@/assets/Screenshot_2026-04-06_1015460.jpg";
+import watercolorScene3 from "@/assets/Screenshot_2026-04-06_101912.jpg";
 import Lightbox from "@/components/Lightbox";
 
 const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
@@ -44,10 +48,10 @@ const artworks: Artwork[] = [
   { title: "Watercolour Study", size: "12 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolor5, category: "Watercolours" },
   { title: "Lake Reflections, Lonavala", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolor6, category: "Watercolours" },
   { title: "Kashi Ghat", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorKashi, category: "Watercolours" },
-  { title: "Deccan Plateau at Dusk", size: "15 × 22 in", medium: "Watercolour on Paper", year: "2024", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
-  { title: "Temple by the Lake", size: "11 × 14 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
-  { title: "Coastal Morning", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
-  { title: "Paddy Fields, Konkan", size: "12 × 18 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
+  { title: "Pune Morning", size: "12 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: puneMorning, category: "Watercolours" },
+  { title: "Market Street", size: "14 × 18 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorScene1, category: "Watercolours" },
+  { title: "Urban Harmony", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorScene2, category: "Watercolours" },
+  { title: "Rust & History", size: "12 × 18 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: watercolorScene3, category: "Watercolours" },
   { title: "Hilltop Village", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
   { title: "Boat at Sea", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: watercolorBoat, category: "Watercolours" },
   { title: "Vintage Pune", size: "14 × 14 in", medium: "Watercolour on Paper", year: "2022", availability: "Available", image: watercolorVintagePune, category: "Watercolours" },

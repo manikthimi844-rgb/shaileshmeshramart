@@ -1,24 +1,18 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import heroArtwork from "@/assets/hero-artwork.jpg";
 import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
-import kashi from "@/assets/kashi.jpg";
-import puneMorning from "@/assets/pune_morning.jpg";
-import watercolorStreet from "@/assets/watercolor-street.jpg";
-import watercolorGodaGhat from "@/assets/watercolor-goda-ghat.jpg";
-import watercolorVintagePune from "@/assets/watercolor-vintage-pune.jpg";
+import slider1 from "@/assets/slider-1.jpg";
+import slider2 from "@/assets/slider-2.jpg";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import ImageSlider from "@/components/ImageSlider";
 import Lightbox from "@/components/Lightbox";
 
 const sliderImages = [
-  { src: kashi, alt: "Kashi by Shailesh Meshram" },
-  { src: puneMorning, alt: "Pune Morning by Shailesh Meshram" },
-  { src: watercolorStreet, alt: "Street Scene by Shailesh Meshram" },
-  { src: watercolorGodaGhat, alt: "Goda Ghat by Shailesh Meshram" },
-  { src: watercolorVintagePune, alt: "Vintage Pune by Shailesh Meshram" },
+  { src: slider1, alt: "Painting by Shailesh Meshram" },
+  { src: slider2, alt: "Painting by Shailesh Meshram" },
+  { src: heroArtwork, alt: "Painting by Shailesh Meshram" },
 ];
 
 const works = [
@@ -34,28 +28,28 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero Slider */}
-      <ImageSlider images={sliderImages} interval={5000} />
-
-      {/* Intro */}
-      <section className="section-spacing">
-        <div className="page-container text-center">
-          <p className="label-text mb-4">Artist</p>
-          <h1 className="heading-display mb-6">Shailesh Meshram</h1>
-          <p className="font-serif text-xl md:text-2xl font-light text-muted-foreground mb-8">
-            Artist
-          </p>
-          <p className="body-text max-w-2xl mx-auto mb-10">
-            Capturing the soul of Pune and beyond — one watercolour 
-            stroke at a time. Through light, texture and the quiet 
-            poetry of everyday scenes, Shailesh Meshram brings 
-            cities to life on paper.
-          </p>
-          <Link to="/work" className="btn-outline">
-            View Work
-          </Link>
+      {/* Hero Slider with Text Overlay */}
+      <div className="relative">
+        <ImageSlider images={sliderImages} interval={5000} />
+        <div style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', zIndex: 10}}>
+          <div style={{paddingLeft: '60px', maxWidth: '500px'}}>
+            <p style={{color: 'rgba(255,255,255,0.8)', letterSpacing: '3px', fontSize: '12px', marginBottom: '16px', textTransform: 'uppercase'}}>
+              Artist
+            </p>
+            <h1 style={{color: 'white', fontSize: '3rem', fontFamily: 'serif', marginBottom: '16px', textShadow: '2px 2px 8px rgba(0,0,0,0.5)'}}>
+              Shailesh Meshram
+            </h1>
+            <p style={{color: 'rgba(255,255,255,0.9)', fontSize: '1.2rem', fontFamily: 'serif', marginBottom: '32px', textShadow: '1px 1px 4px rgba(0,0,0,0.5)'}}>
+              Capturing light before it disappears
+            </p>
+            <Link 
+              to="/work" 
+              style={{border: '1px solid white', color: 'white', padding: '12px 24px', textDecoration: 'none', fontSize: '14px', letterSpacing: '2px', textTransform: 'uppercase'}}>
+              View Work
+            </Link>
+          </div>
         </div>
-      </section>
+      </div>
 
       {/* Works Preview */}
       <section className="section-spacing">

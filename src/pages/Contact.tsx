@@ -32,24 +32,6 @@ const Contact = () => {
                 <a href="https://www.instagram.com/shaileshmesh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="body-text underline hover:text-foreground transition-colors">@shaileshmeshram.art</a>
               </div>
               <div>
-              <p className="label-text mb-1">Facebook</p>
-              <a href="http://facebook.com/shailesh.meshram.12/" 
-                className="body-text underline hover:text-foreground transition-colors" 
-                target="_blank" 
-                rel="noopener noreferrer">
-                facebook.com/shaileshmesh
-              </a>
-            </div>
-            <div>
-              <p className="label-text mb-1">YouTube</p>
-              <a href="https://www.youtube.com/@ArtistShaileshMeshram"
-                className="body-text underline hover:text-foreground transition-colors" 
-                target="_blank" 
-                rel="noopener noreferrer">
-                youtube.com/@shaileshmesh
-              </a>
-            </div>
-              <div>
                 <p className="label-text mb-1">Based in</p>
                 <p className="body-text">Mumbai / Pune, India</p>
               </div>

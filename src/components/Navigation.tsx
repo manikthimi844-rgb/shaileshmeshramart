@@ -1,8 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.jpg";
-import SocialIcons from "@/components/SocialIcons";
+import logo from "@/assets/logo.png";
 
 const navItems = [
   { label: "Work", path: "/work" },
@@ -19,14 +18,9 @@ const Navigation = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm">
-      <nav className="page-container flex items-center justify-between h-14 md:h-16">
-        <Link to="/" className="flex items-center gap-3">
-          <div className="flex flex-col items-center">
-            <span className="font-serif text-lg md:text-xl font-medium tracking-wide text-foreground leading-tight">
-              Shailesh Meshram
-            </span>
-            <img src={logo} alt="Art by SM" className="h-6 md:h-7 mt-0.5" />
-          </div>
+      <nav className="page-container flex items-center justify-between h-16 md:h-20">
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="Shailesh Meshram - Art by SM" className="h-10 md:h-12" />
         </Link>
 
         {/* Desktop */}
@@ -41,7 +35,6 @@ const Navigation = () => {
               </Link>
             </li>
           ))}
-          <li><SocialIcons iconSize={16} /></li>
         </ul>
 
         {/* Mobile toggle */}

@@ -24,10 +24,7 @@ const Journal = () => {
     <div className="section-spacing">
       <div className="page-container">
         <p className="label-text mb-3">Journal</p>
-        <h1 className="heading-display mb-6">Notes from the Field</h1>
-        <p className="body-text mb-12 italic text-muted-foreground/70">
-          [Journal content and data will be provided later — placeholder entries below]
-        </p>
+        <h1 className="heading-display mb-12">Notes from the Field</h1>
 
         {/* Category filters */}
         <div className="flex flex-wrap gap-3 mb-12">

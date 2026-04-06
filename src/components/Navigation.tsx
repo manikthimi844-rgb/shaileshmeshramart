@@ -19,7 +19,7 @@ const Navigation = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm">
-      <nav className="page-container flex items-center justify-between h-20 md:h-24">
+      <nav className="page-container flex items-center justify-between h-14 md:h-16">
         <Link to="/" className="flex items-center gap-3">
           <div className="flex flex-col items-center">
             <span className="font-serif text-lg md:text-xl font-medium tracking-wide text-foreground leading-tight">

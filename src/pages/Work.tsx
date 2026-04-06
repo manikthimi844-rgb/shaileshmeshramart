@@ -23,6 +23,14 @@ import puneMorning from "@/assets/pune_morning.jpg";
 import watercolorScene1 from "@/assets/Screenshot_2026-04-06_101459.jpg";
 import watercolorScene2 from "@/assets/Screenshot_2026-04-06_1015460.jpg";
 import watercolorScene3 from "@/assets/Screenshot_2026-04-06_101912.jpg";
+import venice from "@/assets/Screenshot-2026-04-06.jpg";
+import puneAlley from "@/assets/Screenshot-2026-04-06-103609.jpg";
+import oldBuilding from "@/assets/Screenshot-2026-04-06-103639.jpg";
+import romeStreet1 from "@/assets/Screenshot-2026-04-06-103704.jpg";
+import romeStreet2 from "@/assets/Screenshot-2026-04-06-103727.jpg";
+import vintagePuneShop from "@/assets/Screenshot-2026-04-06-103755.jpg";
+import kashiGhat from "@/assets/Screenshot-2026-04-06-103826.jpg";
+import kathmanduStreet from "@/assets/Screenshot-2026-04-06-103857.jpg";
 import Lightbox from "@/components/Lightbox";
 
 const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
@@ -59,19 +67,19 @@ const artworks: Artwork[] = [
   { title: "Vintage Pune Street", size: "14 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: watercolorVintagePune2, category: "Watercolours" },
 
   // Acrylics (12)
-  { title: "Coastal Sunset, Ratnagiri", size: "30 × 40 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic1, category: "Acrylics" },
-  { title: "Golden Light, Sahyadris", size: "24 × 36 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic2, category: "Acrylics" },
-  { title: "Monsoon Road", size: "20 × 30 in", medium: "Acrylic on Canvas", year: "2023", availability: "Sold", image: artworkAcrylic, category: "Acrylics" },
-  { title: "Village at Dawn", size: "24 × 30 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: artworkAcrylic, category: "Acrylics" },
-  { title: "Western Ghats Panorama", size: "36 × 48 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: artworkAcrylic, category: "Acrylics" },
-  { title: "River at Twilight", size: "24 × 36 in", medium: "Acrylic on Canvas", year: "2024", availability: "Sold", image: artworkAcrylic, category: "Acrylics" },
-  { title: "Autumn Hillside", size: "20 × 24 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: artworkAcrylic, category: "Acrylics" },
-  { title: "Fog Over the Valley", size: "30 × 40 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: artworkAcrylic, category: "Acrylics" },
-  { title: "Plateau Study", size: "18 × 24 in", medium: "Acrylic on Board", year: "2023", availability: "Sold", image: artworkAcrylic, category: "Acrylics" },
-  { title: "Sunset at Mulshi", size: "24 × 36 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: artworkAcrylic, category: "Acrylics" },
-  { title: "Morning Mist, Mahabaleshwar", size: "20 × 30 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: artworkAcrylic, category: "Acrylics" },
-  { title: "Lakeside Reflections", size: "24 × 30 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: artworkAcrylic, category: "Acrylics" },
-
+{ title: "Venice Canal", size: "12 × 12 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: venice, category: "Acrylics" },
+{ title: "Pune Alley", size: "12 × 12 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: puneAlley, category: "Acrylics" },
+{ title: "Old Building, Pune", size: "24 × 24 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: oldBuilding, category: "Acrylics" },
+{ title: "Rome Street I", size: "10 × 12 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: romeStreet1, category: "Acrylics" },
+{ title: "Rome Street II", size: "10 × 12 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: romeStreet2, category: "Acrylics" },
+{ title: "Vintage Pune Shop", size: "24 × 24 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: vintagePuneShop, category: "Acrylics" },
+{ title: "Kashi Ghat", size: "14 × 18 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: kashiGhat, category: "Acrylics" },
+{ title: "Kathmandu Street", size: "24 × 24 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: kathmanduStreet, category: "Acrylics" },
+{ title: "Coastal Sunset", size: "30 × 40 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic1, category: "Acrylics" },
+{ title: "Golden Light", size: "24 × 36 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic2, category: "Acrylics" },
+{ title: "Monsoon Road", size: "20 × 30 in", medium: "Acrylic on Canvas", year: "2023", availability: "Sold", image: artworkAcrylic, category: "Acrylics" },
+{ title: "Village at Dawn", size: "24 × 30 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: artworkAcrylic, category: "Acrylics"},
+  
   // Sketchbooks & Studies (12)
   { title: "Afternoon Study, Pune", size: "9 × 12 in", medium: "Pencil & Wash", year: "2024", availability: "Not for Sale", image: artworkSketch, category: "Sketchbooks & Studies" },
   { title: "Tree Study, Mahabaleshwar", size: "8 × 10 in", medium: "Ink & Watercolour", year: "2023", availability: "Available", image: artworkSketch, category: "Sketchbooks & Studies" },

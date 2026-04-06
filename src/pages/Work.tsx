@@ -39,8 +39,8 @@ const artworks: Artwork[] = [
   { title: "Valley Road", size: "12 × 16 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
 
   // Acrylics (12)
-  { title: "Coastal Sunset, Ratnagiri", size: "30 × 40 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: artworkAcrylic, category: "Acrylics" },
-  { title: "Golden Light, Sahyadris", size: "24 × 36 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: artworkAcrylic, category: "Acrylics" },
+  { title: "Coastal Sunset, Ratnagiri", size: "30 × 40 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic1, category: "Acrylics" },
+  { title: "Golden Light, Sahyadris", size: "24 × 36 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic2, category: "Acrylics" },
   { title: "Monsoon Road", size: "20 × 30 in", medium: "Acrylic on Canvas", year: "2023", availability: "Sold", image: artworkAcrylic, category: "Acrylics" },
   { title: "Village at Dawn", size: "24 × 30 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: artworkAcrylic, category: "Acrylics" },
   { title: "Western Ghats Panorama", size: "36 × 48 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: artworkAcrylic, category: "Acrylics" },

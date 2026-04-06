@@ -12,7 +12,7 @@ import Lightbox from "@/components/Lightbox";
 const sliderImages = [
   { src: slider1, alt: "Painting by Shailesh Meshram" },
   { src: slider2, alt: "Painting by Shailesh Meshram" },
-  { src: heroArtwork, alt: "Painting by Shailesh Meshram" },
+  { src: img0293, alt: "Painting by Shailesh Meshram" },
 ];
 
 const works = [

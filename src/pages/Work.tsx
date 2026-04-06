@@ -7,6 +7,10 @@ import artworkSketch from "@/assets/artwork-sketch.jpg";
 import heroArtwork from "@/assets/hero-artwork.jpg";
 import artworkPleinair from "@/assets/artwork-pleinair.jpg";
 import watercolorGodaGhat from "@/assets/watercolor-goda-ghat.jpg";
+import watercolorStreet from "@/assets/watercolor-street.jpg";
+import watercolorDoor from "@/assets/watercolor-door.jpg";
+import watercolorMountains from "@/assets/watercolor-mountains.jpg";
+import watercolorScene from "@/assets/watercolor-scene.jpg";
 import Lightbox from "@/components/Lightbox";
 
 const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;

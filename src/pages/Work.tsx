@@ -3,6 +3,7 @@ import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import wcstreetkathmandu from "@/assets/wc-street-kathmandu.jpg";
+import  img_0017 from "@/assets/img_0017.jpg";
 import  wcLadakh from "@/assets/wc-Ladakh.jpg";
 import  wcitalysquare from "@/assets/wc-italy-square.jpg";
 import  wcpainting from "@/assets/wc-painting.jpg";
@@ -49,6 +50,7 @@ const artworks: Artwork[] = [
   { title: "Afternoon Light", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2020", availability: "Sold", image: wcPainting2, category: "Watercolours" },
   { title: "Market Light", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcMarketLight, category: "Watercolours" },
   { title: "Street Scene, Pune", size: "10 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcStreetScene, category: "Watercolours" },
+  { title: "Bazaar Morning, Pune", size: "10 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: img_0017 , category: "Watercolours" },
   { title: "Ladakh", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcLadakh, category: "Watercolours" },
   { title: "Old City Lane, Pune", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcpainting, category: "Watercolours" }, 
   { title: "Italy square", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcitalysquare, category: "Watercolours" },

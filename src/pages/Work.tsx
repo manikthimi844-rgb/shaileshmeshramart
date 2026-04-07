@@ -12,10 +12,6 @@ import wcStreetScene from "@/assets/wc-street-scene.jpg";
 import wcBoat from "@/assets/wc-boat.jpg";
 import wcVintagePuneLarge from "@/assets/wc-vintage-pune-large.jpg";
 import wcGodaGhat from "@/assets/wc-goda-ghat.jpg";
-import wcLadakh from "@/assets/wc-ladakh.JPG";
-import wcItalySquare from "@/assets/wc-italy-square.JPG";
-import wcStreetKathmandu from "@/assets/wc-street-kathmandu.jpg";
-import wcPaintingNew from "@/assets/wc-painting-new.JPG";
 import acrylic1 from "@/assets/1_(2).jpg";
 import acrylic2 from "@/assets/2_(2).jpg";
 import acrylic3 from "@/assets/3_(2).jpg";
@@ -53,10 +49,6 @@ const artworks: Artwork[] = [
   { title: "Vintage Pune Corner", size: "14 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcVintagePuneLarge, category: "Watercolours" },
   { title: "Goda Ghat, Nashik", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcGodaGhat, category: "Watercolours" },
   { title: "Lake Reflections, Lonavala", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
-  { title: "Ladakh Monastery", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcLadakh, category: "Watercolours" },
-  { title: "Italian Square", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2017", availability: "Available", image: wcItalySquare, category: "Watercolours" },
-  { title: "Street, Kathmandu", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcStreetKathmandu, category: "Watercolours" },
-  { title: "New Watercolour", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcPaintingNew, category: "Watercolours" },
   { title: "Venetian Canal", size: "24 × 30 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic1, category: "Acrylics" },
   { title: "Urban Reflections", size: "20 × 24 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic2, category: "Acrylics" },
   { title: "Historic Passage", size: "18 × 24 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic3, category: "Acrylics" },

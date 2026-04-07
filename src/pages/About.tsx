@@ -33,59 +33,62 @@ const About = () => (
   <div className="section-spacing">
     <div className="page-container">
       {/* Hero Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-16 mb-20">
-        {/* Bio */}
-        <div className="lg:col-span-3 flex flex-col justify-center">
-          <p className="label-text mb-2">About the Artist</p>
-          <h1 className="heading-display mb-4">Shailesh Meshram</h1>
-          <p className="text-sm text-muted-foreground mb-6 tracking-wide">
-            Born 20 December 1972, Nagpur · BFA, Government Chitrakala Mahavidyalaya, Nagpur (1996)
-          </p>
+      <div className="mb-20">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+          {/* Bio */}
+          <div className="flex-1">
+            <p className="label-text mb-2">About the Artist</p>
+            <h1 className="heading-display mb-4">Shailesh Meshram</h1>
+            <p className="text-sm text-muted-foreground mb-6 tracking-wide">
+              Born 20 December 1972, Nagpur · BFA, Government Chitrakala Mahavidyalaya, Nagpur (1996)
+            </p>
 
-          <div className="space-y-4 mb-8">
-            <p className="body-text">
-              Shailesh is an old soul. He is a prolific painter despite being a full-time advertising professional. Hailing from Nagpur, and trained in Applied Arts, Shailesh chose Pune as his Karma Bhumi.
-            </p>
-            <p className="body-text">
-              An avid traveller, he has painted Varanasi, Kathmandu, Rome, Venice, Rajasthan and many places around Pune. But his main subject is his city, Pune. Shailesh has developed a deep understanding of the city — the light, textures and the essential character.
-            </p>
-            <p className="body-text">
-              Working a unique style of merging washes, white areas, colourful patches, and cleverly placed lines, he captures the viewers' imagination. He is a rare watercolour artist who has understood and mastered the art of letting the painting paint itself.
-            </p>
+            <div className="space-y-4 mb-8">
+              <p className="body-text">
+                Shailesh is an old soul. He is a prolific painter despite being a full-time advertising professional. Hailing from Nagpur, and trained in Applied Arts, Shailesh chose Pune as his Karma Bhumi.
+              </p>
+              <p className="body-text">
+                An avid traveller, he has painted Varanasi, Kathmandu, Rome, Venice, Rajasthan and many places around Pune. But his main subject is his city, Pune. Shailesh has developed a deep understanding of the city — the light, textures and the essential character.
+              </p>
+              <p className="body-text">
+                Working a unique style of merging washes, white areas, colourful patches, and cleverly placed lines, he captures the viewers' imagination. He is a rare watercolour artist who has understood and mastered the art of letting the painting paint itself.
+              </p>
+            </div>
+
+            <blockquote className="quote-block mb-8">
+              "I am less interested in painting a location, and more drawn to painting what the moment feels like."
+            </blockquote>
+
+            {/* Quick Facts */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-border">
+              <div>
+                <p className="font-serif text-2xl text-foreground">30+</p>
+                <p className="text-xs text-muted-foreground tracking-wide uppercase">Years of Practice</p>
+              </div>
+              <div>
+                <p className="font-serif text-2xl text-foreground">25+</p>
+                <p className="text-xs text-muted-foreground tracking-wide uppercase">Exhibitions</p>
+              </div>
+              <div>
+                <p className="font-serif text-2xl text-foreground">5</p>
+                <p className="text-xs text-muted-foreground tracking-wide uppercase">Solo Shows</p>
+              </div>
+            </div>
           </div>
 
-          <blockquote className="quote-block mb-8">
-            "I am less interested in painting a location, and more drawn to painting what the moment feels like."
-          </blockquote>
-
-          {/* Quick Facts */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-border">
-            <div>
-              <p className="font-serif text-2xl text-foreground">30+</p>
-              <p className="text-xs text-muted-foreground tracking-wide uppercase">Years of Practice</p>
+          {/* Portrait */}
+          <div className="w-48 flex-shrink-0">
+            <div className="aspect-square overflow-hidden bg-muted rounded-sm">
+              <img
+                src={artistPortrait}
+                alt="Shailesh Meshram"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                width={400}
+                height={400}
+              />
             </div>
-            <div>
-              <p className="font-serif text-2xl text-foreground">25+</p>
-              <p className="text-xs text-muted-foreground tracking-wide uppercase">Exhibitions</p>
-            </div>
-            <div>
-              <p className="font-serif text-2xl text-foreground">5</p>
-              <p className="text-xs text-muted-foreground tracking-wide uppercase">Solo Shows</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Portrait */}
-        <div className="lg:col-span-2">
-          <div className="aspect-[3/4] overflow-hidden bg-muted sticky top-24">
-            <img
-              src={artistPortrait}
-              alt="Shailesh Meshram in his studio"
-              className="w-full h-full object-cover"
-              loading="lazy"
-              width={800}
-              height={1000}
-            />
+            <p className="text-center font-serif text-sm mt-4 text-foreground">Shailesh Meshram</p>
           </div>
         </div>
       </div>

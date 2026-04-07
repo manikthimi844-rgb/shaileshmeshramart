@@ -16,6 +16,11 @@ import acrylic1 from "@/assets/1_(2).jpg";
 import acrylic2 from "@/assets/2_(2).jpg";
 import acrylic3 from "@/assets/3_(2).jpg";
 import acrylic4 from "@/assets/4_(2).jpg";
+import acrylic5 from "@/assets/5_(2).jpg";
+import acrylic6 from "@/assets/6_(2).jpg";
+import acrylic7 from "@/assets/7_(2).jpg";
+import acrylic8 from "@/assets/8_(2).jpg";
+import acrylicPainting from "@/assets/1.jpg";
 import Lightbox from "@/components/Lightbox";
 
 const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
@@ -48,6 +53,11 @@ const artworks: Artwork[] = [
   { title: "Urban Reflections", size: "20 × 24 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic2, category: "Acrylics" },
   { title: "Historic Passage", size: "18 × 24 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic3, category: "Acrylics" },
   { title: "Architectural Study", size: "20 × 26 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic4, category: "Acrylics" },
+  { title: "Harbor Serenity", size: "22 × 28 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic5, category: "Acrylics" },
+  { title: "Coastal Light", size: "20 × 24 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic6, category: "Acrylics" },
+  { title: "Urban Marketplace", size: "18 × 22 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic7, category: "Acrylics" },
+  { title: "Industrial Textures", size: "24 × 32 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic8, category: "Acrylics" },
+  { title: "Street Vignette", size: "12 × 16 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylicPainting, category: "Acrylics" },
   { title: "Afternoon Study, Pune", size: "9 × 12 in", medium: "Pencil & Wash", year: "2024", availability: "Not for Sale", image: artworkSketch, category: "Sketchbooks & Studies" },
 ];
 

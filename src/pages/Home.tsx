@@ -37,10 +37,10 @@ const Home = () => {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [lightboxSection, setLightboxSection] = useState<"acrylic" | "watercolor">("acrylic");
 
-  const currentWorks = lightboxSection === "acrylic" ? acrylicWorks : watercolorWorks;
+  const currentWorks = lightboxSection === "watercolors" ? watercolorworks : acrylicworks;
   const lightboxImages = currentWorks.map((w) => ({ src: w.image, alt: w.title }));
 
-  const openLightbox = (section: "acrylic" | "watercolor", index: number) => {
+  const openLightbox = (section: "watercolor" | "acrylic", index: number) => {
     setLightboxSection(section);
     setLightboxIndex(index);
   };

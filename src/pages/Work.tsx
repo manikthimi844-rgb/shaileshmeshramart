@@ -50,7 +50,7 @@ const artworks: Artwork[] = [
   { title: "Market Light", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcMarketLight, category: "Watercolours" },
   { title: "Street Scene, Pune", size: "10 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcStreetScene, category: "Watercolours" },
   { title: "Ladakh", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcLadakh, category: "Watercolours" },
-  { title: "Street painting", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcpainting, category: "Watercolours" }, 
+  { title: "Old City Lane, Pune", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcpainting, category: "Watercolours" }, 
   { title: "Italy square", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcitalysquare, category: "Watercolours" },
   { title: "Solitary Boat", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcBoat, category: "Watercolours" },
   { title: "Vintage Pune Corner", size: "14 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcVintagePuneLarge, category: "Watercolours" },

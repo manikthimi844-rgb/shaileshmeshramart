@@ -2,7 +2,7 @@ import { useState } from "react";
 import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
-import wcitalysquare from "@/assets/wc-italy-square.JPG";
+import wcstreetkathmandu from "@/assets/wc-street-kathmandu.jpg";
 import wcKashi from "@/assets/wc-kashi.jpg";
 import wcPuneMorning from "@/assets/wc-pune-morning.jpg";
 import wcRedWindows from "@/assets/wc-red-windows.jpg";
@@ -48,7 +48,7 @@ const artworks: Artwork[] = [
   { title: "Street Scene, Pune", size: "10 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcStreetScene, category: "Watercolours" },
   { title: "Solitary Boat", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcBoat, category: "Watercolours" },
   { title: "Vintage Pune Corner", size: "14 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcVintagePuneLarge, category: "Watercolours" },
-  { title: "italy square", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcitalysquare, category: "Watercolours" },
+  { title: "street kathmandu", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image:  wcstreetkathmandu, category: "Watercolours" },
   { title: "Goda Ghat, Nashik", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcGodaGhat, category: "Watercolours" },
   { title: "Venetian Canal", size: "24 × 30 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic1, category: "Acrylics" },
   { title: "Urban Reflections", size: "20 × 24 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic2, category: "Acrylics" },

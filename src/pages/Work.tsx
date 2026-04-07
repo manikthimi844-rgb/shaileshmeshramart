@@ -54,7 +54,7 @@ const artworks: Artwork[] = [
   { title: "Italy square", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcitalysquare, category: "Watercolours" },
   { title: "Solitary Boat", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcBoat, category: "Watercolours" },
   { title: "Vintage Pune Corner", size: "14 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcVintagePuneLarge, category: "Watercolours" },
-  { title: "street kathmandu", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image:  wcstreetkathmandu, category: "Watercolours" },
+  { title: "Mandai Market, Pune", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image:  wcstreetkathmandu, category: "Watercolours" },
   { title: "Goda Ghat, Nashik", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcGodaGhat, category: "Watercolours" },
   { title: "Venetian Canal", size: "24 × 30 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic1, category: "Acrylics" },
   { title: "Urban Reflections", size: "20 × 24 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic2, category: "Acrylics" },

@@ -49,10 +49,10 @@ const About = () => (
               <p className="body-text text-xs md:text-base">
                 Shailesh is an old soul. He is a prolific painter despite being a full-time advertising professional. Hailing from Nagpur, and trained in Applied Arts, Shailesh chose Pune as his Karma Bhumi.
               </p>
-              <p className="body-text text-xs md:text-base hidden sm:block">
+              <p className="body-text text-xs md:text-base ">
                 An avid traveller, he has painted Varanasi, Kathmandu, Rome, Venice, Rajasthan and many places around Pune. But his main subject is his city, Pune. Shailesh has developed a deep understanding of the city — the light, textures and the essential character.
               </p>
-              <p className="body-text text-xs md:text-base hidden md:block">
+              <p className="body-text text-xs md:text-base ">
                 Working a unique style of merging washes, white areas, colourful patches, and cleverly placed lines, he captures the viewers' imagination. He is a rare watercolour artist who has understood and mastered the art of letting the painting paint itself.
               </p>
             </div>

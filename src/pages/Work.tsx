@@ -61,7 +61,7 @@ const artworks: Artwork[] = [
   { title: "Historic Passage", size: "18 × 24 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic3, category: "Acrylics" },
   { title: "Architectural Study", size: "20 × 26 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic4, category: "Acrylics" },
   { title: "Harbor Serenity", size: "22 × 28 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic5, category: "Acrylics" },
-  { title: "Coastal Light", size: "20 × 24 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic6, category: "Acrylics" },
+  
   { title: "Urban Marketplace", size: "18 × 22 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic7, category: "Acrylics" },
   { title: "Industrial Textures", size: "24 × 32 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic8, category: "Acrylics" },
   { title: "Street Vignette", size: "12 × 16 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylicPainting, category: "Acrylics" },

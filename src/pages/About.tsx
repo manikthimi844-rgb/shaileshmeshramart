@@ -32,10 +32,42 @@ const shows = [
 const About = () => (
   <div className="section-spacing">
     <div className="page-container">
+
       {/* Hero Section */}
       <div className="mb-20">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-          {/* Bio */}
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+
+          {/* Portrait — LEFT side on desktop */}
+          <div className="w-full lg:w-80 flex-shrink-0 flex flex-col items-center lg:items-start">
+            <div className="w-full max-w-xs lg:max-w-none overflow-hidden rounded-sm shadow-lg">
+              <img
+                src={artistPortrait}
+                alt="Shailesh Meshram"
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-center lg:text-left font-serif text-sm mt-4 text-muted-foreground italic">
+              Shailesh Meshram
+            </p>
+            {/* Quick Facts below photo on desktop */}
+            <div className="hidden lg:grid grid-cols-1 gap-4 mt-8 w-full border-t border-border pt-6">
+              <div>
+                <p className="font-serif text-3xl text-foreground">30+</p>
+                <p className="text-xs text-muted-foreground tracking-wide uppercase">Years of Practice</p>
+              </div>
+              <div>
+                <p className="font-serif text-3xl text-foreground">25+</p>
+                <p className="text-xs text-muted-foreground tracking-wide uppercase">Exhibitions</p>
+              </div>
+              <div>
+                <p className="font-serif text-3xl text-foreground">5</p>
+                <p className="text-xs text-muted-foreground tracking-wide uppercase">Solo Shows</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bio — RIGHT side on desktop */}
           <div className="flex-1">
             <p className="label-text mb-2">About the Artist</p>
             <h1 className="heading-display mb-4">Shailesh Meshram</h1>
@@ -59,8 +91,8 @@ const About = () => (
               "I am less interested in painting a location, and more drawn to painting what the moment feels like."
             </blockquote>
 
-            {/* Quick Facts */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-border">
+            {/* Quick Facts — visible on mobile only */}
+            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-border lg:hidden">
               <div>
                 <p className="font-serif text-2xl text-foreground">30+</p>
                 <p className="text-xs text-muted-foreground tracking-wide uppercase">Years of Practice</p>
@@ -76,20 +108,6 @@ const About = () => (
             </div>
           </div>
 
-          {/* Portrait */}
-          <div className="w-48 flex-shrink-0">
-            <div className="aspect-square overflow-hidden bg-muted rounded-sm">
-              <img
-                src={artistPortrait}
-                alt="Shailesh Meshram"
-                className="w-full h-full object-cover"
-                loading="lazy"
-                width={400}
-                height={400}
-              />
-            </div>
-            <p className="text-center font-serif text-sm mt-4 text-foreground">Shailesh Meshram</p>
-          </div>
         </div>
       </div>
 
@@ -117,6 +135,7 @@ const About = () => (
           ))}
         </div>
       </div>
+
     </div>
   </div>
 );

@@ -2,7 +2,18 @@ import { useState } from "react";
 import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
-import heroArtwork from "@/assets/hero-artwork.jpg";
+import wcKashi from "@/assets/wc-kashi.jpg";
+import wcPuneMorning from "@/assets/wc-pune-morning.jpg";
+import wcRedWindows from "@/assets/wc-red-windows.jpg";
+import wcVintagePune from "@/assets/wc-vintage-pune.jpg";
+import wcPainting2 from "@/assets/wc-painting2.jpg";
+import wcMarketLight from "@/assets/wc-market-light.jpg";
+import wcStreetScene from "@/assets/wc-street-scene.jpg";
+import wcBoat from "@/assets/wc-boat.jpg";
+import wcVintagePuneLarge from "@/assets/wc-vintage-pune-large.jpg";
+import wcGodaGhat from "@/assets/wc-goda-ghat.jpg";
+import acylicVenice from "@/assets/acrylic-venice.jpg";
+import acrylicPco from "@/assets/acrylic-pco.jpg";
 import Lightbox from "@/components/Lightbox";
 
 const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
@@ -20,12 +31,20 @@ interface Artwork {
 }
 
 const artworks: Artwork[] = [
- 
+  { title: "Kashi Ghats", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcKashi, category: "Watercolours" },
+  { title: "Pune Morning", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcPuneMorning, category: "Watercolours" },
+  { title: "Red Windows", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcRedWindows, category: "Watercolours" },
+  { title: "Vintage Pune", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2022", availability: "Available", image: wcVintagePune, category: "Watercolours" },
+  { title: "Afternoon Light", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2020", availability: "Sold", image: wcPainting2, category: "Watercolours" },
+  { title: "Market Light", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcMarketLight, category: "Watercolours" },
+  { title: "Street Scene, Pune", size: "10 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcStreetScene, category: "Watercolours" },
+  { title: "Solitary Boat", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcBoat, category: "Watercolours" },
+  { title: "Vintage Pune Corner", size: "14 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcVintagePuneLarge, category: "Watercolours" },
+  { title: "Goda Ghat, Nashik", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcGodaGhat, category: "Watercolours" },
   { title: "Lake Reflections, Lonavala", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
-  { title: "Misty Peaks", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Sold", image: artworkWatercolor, category: "Watercolours" },
-  { title: "Coastal Sunset, Ratnagiri", size: "30 × 40 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: artworkAcrylic, category: "Acrylics" },
+  { title: "Coastal Sunset, Ratnagiri", size: "30 × 40 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylicPco, category: "Acrylics" },
+  { title: "Venice Evening", size: "24 × 36 in", medium: "Acrylic on Canvas", year: "2023", availability: "Sold", image: acylicVenice, category: "Acrylics" },
   { title: "Afternoon Study, Pune", size: "9 × 12 in", medium: "Pencil & Wash", year: "2024", availability: "Not for Sale", image: artworkSketch, category: "Sketchbooks & Studies" },
-  { title: "Tree Study, Mahabaleshwar", size: "8 × 10 in", medium: "Ink & Watercolour", year: "2023", availability: "Available", image: artworkSketch, category: "Sketchbooks & Studies" },
 ];
 
 const Work = () => {
@@ -40,7 +59,6 @@ const Work = () => {
         <p className="label-text mb-3">Portfolio</p>
         <h1 className="heading-display mb-12">Work</h1>
 
-        {/* Category Tabs */}
         <div className="flex flex-wrap gap-4 mb-12 border-b border-border pb-4">
           {categories.map((cat) => (
             <button
@@ -53,7 +71,6 @@ const Work = () => {
           ))}
         </div>
 
-        {/* Artworks Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filtered.map((work, i) => (
             <div key={i} className="artwork-card cursor-pointer" onClick={() => setLightboxIndex(i)}>

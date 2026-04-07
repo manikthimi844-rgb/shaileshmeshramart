@@ -24,18 +24,16 @@ const watercolorWorks = [
   { title: "The Red Gate", medium: "Watercolour on Paper", year: "2023", image: wcGate },
 ];
 
-
 const acrylicWorks = [
   { title: "Venice Canal", medium: "Oil on Canvas", year: "2022", image: acrylicVenice },
   { title: "Urban Fragment", medium: "Acrylic on Canvas", year: "2023", image: acrylicPco },
   { title: "Auto Rickshaws in Rain", medium: "Oil on Canvas", year: "2023", image: artwork1 },
 ];
 
-
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-  const [lightboxSection, setLightboxSection] = useState<"acrylic" | "watercolor">("acrylic");
+  const [lightboxSection, setLightboxSection] = useState<"acrylic" | "watercolor">("watercolor");
 
   const currentWorks = lightboxSection === "acrylic" ? acrylicWorks : watercolorWorks;
   const lightboxImages = currentWorks.map((w) => ({ src: w.image, alt: w.title }));
@@ -75,7 +73,6 @@ const Home = () => {
           </div>
         ))}
 
-        {/* Text on left – pushed further left with pl */}
         <div className="relative w-full h-full flex items-center px-6 sm:px-10 md:px-16 lg:px-20">
           <div className="max-w-xl text-primary-foreground">
             <p className="label-text mb-4 !text-primary-foreground/70">Contemporary Artist</p>
@@ -97,7 +94,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Slide indicators */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
           {slides.map((_, i) => (
             <button
@@ -112,14 +108,14 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Recent Acrylic Paintings */}
+      {/* Recent Watercolour Paintings — FIRST */}
       <section className="section-spacing">
         <div className="page-container">
           <p className="label-text mb-3">Selected Works</p>
-          <h2 className="heading-section mb-12">Recent Acrylic Paintings</h2>
+          <h2 className="heading-section mb-12">Recent Watercolour Paintings</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {acrylicWorks.map((work, i) => (
-              <div key={i} className="artwork-card block overflow-hidden cursor-pointer" onClick={() => openLightbox("acrylic", i)}>
+            {watercolorWorks.map((work, i) => (
+              <div key={i} className="artwork-card block overflow-hidden cursor-pointer" onClick={() => openLightbox("watercolor", i)}>
                 <div className="aspect-[4/3] overflow-hidden bg-muted mb-4">
                   <img src={work.image} alt={work.title} className="w-full h-full object-cover" loading="lazy" width={1200} height={900} />
                 </div>
@@ -131,13 +127,13 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Recent Watercolour Paintings */}
+      {/* Recent Acrylic Paintings — SECOND */}
       <section className="section-spacing">
         <div className="page-container">
-          <h2 className="heading-section mb-12">Recent Watercolour Paintings</h2>
+          <h2 className="heading-section mb-12">Recent Acrylic Paintings</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {watercolorWorks.map((work, i) => (
-              <div key={i} className="artwork-card block overflow-hidden cursor-pointer" onClick={() => openLightbox("watercolor", i)}>
+            {acrylicWorks.map((work, i) => (
+              <div key={i} className="artwork-card block overflow-hidden cursor-pointer" onClick={() => openLightbox("acrylic", i)}>
                 <div className="aspect-[4/3] overflow-hidden bg-muted mb-4">
                   <img src={work.image} alt={work.title} className="w-full h-full object-cover" loading="lazy" width={1200} height={900} />
                 </div>

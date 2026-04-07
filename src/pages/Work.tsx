@@ -3,9 +3,9 @@ import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
 import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
 import artworkSketch from "@/assets/artwork-sketch.jpg";
 import wcstreetkathmandu from "@/assets/wc-street-kathmandu.jpg";
-import  from "@/assets/.jpg";
-import  from "@/assets/.jpg";
-import  from "@/assets/.jpg";
+import  wcLadakh from "@/assets/wc-Ladakh.jpg";
+import  wcitalysquare from "@/assets/wc-italy-square.jpg";
+import  wcpainting from "@/assets/wc-painting.jpg";
 import wcKashi from "@/assets/wc-kashi.jpg";
 import wcPuneMorning from "@/assets/wc-pune-morning.jpg";
 import wcRedWindows from "@/assets/wc-red-windows.jpg";
@@ -49,6 +49,9 @@ const artworks: Artwork[] = [
   { title: "Afternoon Light", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2020", availability: "Sold", image: wcPainting2, category: "Watercolours" },
   { title: "Market Light", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcMarketLight, category: "Watercolours" },
   { title: "Street Scene, Pune", size: "10 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcStreetScene, category: "Watercolours" },
+  { title: "Ladakh", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcLadakh, category: "Watercolours" },
+  { title: "Street painting", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcpainting, category: "Watercolours" }, 
+  { title: "Italy square", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcitalysquare, category: "Watercolours" },
   { title: "Solitary Boat", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcBoat, category: "Watercolours" },
   { title: "Vintage Pune Corner", size: "14 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcVintagePuneLarge, category: "Watercolours" },
   { title: "street kathmandu", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image:  wcstreetkathmandu, category: "Watercolours" },

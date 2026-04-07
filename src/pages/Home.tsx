@@ -17,18 +17,20 @@ const slides = [
   { image: artworkVenice, alt: "Venice Canal" },
 ];
 
-const acrylicWorks = [
-  { title: "Venice Canal", medium: "Oil on Canvas", year: "2022", image: acrylicVenice },
-  { title: "Urban Fragment", medium: "Acrylic on Canvas", year: "2023", image: acrylicPco },
-  { title: "Auto Rickshaws in Rain", medium: "Oil on Canvas", year: "2023", image: artwork1 },
-];
-
 const watercolorWorks = [
   { title: "Market Street, Pune", medium: "Watercolour on Paper", year: "2024", image: wcMarket },
   { title: "Old Town, Pune", medium: "Watercolour on Paper", year: "2024", image: wcStreet },
   { title: "Red Windows", medium: "Watercolour on Paper", year: "2026", image: wcWindows },
   { title: "The Red Gate", medium: "Watercolour on Paper", year: "2023", image: wcGate },
 ];
+
+
+const acrylicWorks = [
+  { title: "Venice Canal", medium: "Oil on Canvas", year: "2022", image: acrylicVenice },
+  { title: "Urban Fragment", medium: "Acrylic on Canvas", year: "2023", image: acrylicPco },
+  { title: "Auto Rickshaws in Rain", medium: "Oil on Canvas", year: "2023", image: artwork1 },
+];
+
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

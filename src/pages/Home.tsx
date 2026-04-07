@@ -1,46 +1,92 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import heroArtwork from "@/assets/hero-artwork.jpg";
-import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
+import artwork1 from "@/assets/artwork-1.jpg";
+import artworkThimi from "@/assets/artwork-thimi.jpg";
+import artworkVenice from "@/assets/artwork-venice.jpg";
 import Lightbox from "@/components/Lightbox";
 
+const slides = [
+  { image: artwork1, alt: "Auto rickshaws in rain" },
+  { image: artworkThimi, alt: "Thimi Village, Nepal" },
+  { image: artworkVenice, alt: "Venice Canal" },
+];
+
 const works = [
-  { title: "Golden Hour, Western Ghats", medium: "Oil on Canvas", year: "2024", image: heroArtwork },
-  { title: "Morning Mist, Konkan", medium: "Watercolour on Paper", year: "2024", image: artworkWatercolor },
+  { title: "Auto Rickshaws in Rain", medium: "Oil on Canvas", year: "2023", image: artwork1 },
+  { title: "Thimi Village, Nepal", medium: "Watercolour on Paper", year: "2024", image: artworkThimi },
+  { title: "Venice Canal", medium: "Oil on Canvas", year: "2022", image: artworkVenice },
 ];
 
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const lightboxImages = works.map((w) => ({ src: w.image, alt: w.title }));
 
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, [nextSlide]);
+
   return (
     <div>
-      {/* Hero */}
-      <section className="relative h-screen flex items-end">
-        <div className="absolute inset-0">
-          <img
-            src={heroArtwork}
-            alt="Atmospheric landscape painting by Shailesh Meshram"
-            className="w-full h-full object-cover"
-            width={1920}
-            height={1080}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
+      {/* Hero Slider */}
+      <section className="relative h-screen flex items-center">
+        {/* Slides */}
+        {slides.map((slide, i) => (
+          <div
+            key={i}
+            className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+            style={{ opacity: currentSlide === i ? 1 : 0 }}
+          >
+            <img
+              src={slide.image}
+              alt={slide.alt}
+              className="w-full h-full object-cover"
+              width={1920}
+              height={1080}
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/40 to-transparent" />
+          </div>
+        ))}
+
+        {/* Text on left */}
+        <div className="relative page-container flex items-center h-full">
+          <div className="max-w-xl text-primary-foreground">
+            <p className="label-text mb-4 !text-primary-foreground/70">Contemporary Artist</p>
+            <h1 className="heading-display !text-primary-foreground mb-4">Shailesh Meshram</h1>
+            <p className="font-serif text-xl md:text-2xl font-light text-primary-foreground/90 mb-8">
+              Painting Light, Air, and Memory.
+            </p>
+            <p className="body-text !text-primary-foreground/80 mb-10">
+              Landscapes are never still. Light shifts, air moves, and moments dissolve quietly into memory.
+              Through plein air and studio practice, Shailesh Meshram captures these fleeting transitions —
+              translating atmosphere into paint.
+            </p>
+            <Link
+              to="/work"
+              className="btn-outline !border-primary-foreground/50 !text-primary-foreground hover:!bg-primary-foreground hover:!text-foreground"
+            >
+              View Work
+            </Link>
+          </div>
         </div>
-        <div className="relative page-container pb-16 md:pb-24 text-primary-foreground">
-          <p className="label-text mb-4 !text-primary-foreground/70">Contemporary Artist</p>
-          <h1 className="heading-display !text-primary-foreground mb-4">Shailesh Meshram</h1>
-          <p className="font-serif text-xl md:text-2xl font-light text-primary-foreground/90 mb-8">
-            Painting Light, Air, and Memory.
-          </p>
-          <p className="body-text max-w-xl !text-primary-foreground/80 mb-10">
-            Landscapes are never still. Light shifts, air moves, and moments dissolve quietly into memory.
-            Through plein air and studio practice, Shailesh Meshram captures these fleeting transitions —
-            translating atmosphere into paint.
-          </p>
-          <Link to="/work" className="btn-outline !border-primary-foreground/50 !text-primary-foreground hover:!bg-primary-foreground hover:!text-foreground">
-            View Work
-          </Link>
+
+        {/* Slide indicators */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentSlide(i)}
+              className={`w-2 h-2 rounded-full transition-all ${
+                currentSlide === i ? "bg-primary-foreground w-6" : "bg-primary-foreground/40"
+              }`}
+              aria-label={`Go to slide ${i + 1}`}
+            />
+          ))}
         </div>
       </section>
 
@@ -49,7 +95,7 @@ const Home = () => {
         <div className="page-container">
           <p className="label-text mb-3">Selected Works</p>
           <h2 className="heading-section mb-12">Recent Paintings</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {works.map((work, i) => (
               <div key={i} className="artwork-card block overflow-hidden cursor-pointer" onClick={() => setLightboxIndex(i)}>
                 <div className="aspect-[4/3] overflow-hidden bg-muted mb-4">

@@ -12,8 +12,10 @@ import wcStreetScene from "@/assets/wc-street-scene.jpg";
 import wcBoat from "@/assets/wc-boat.jpg";
 import wcVintagePuneLarge from "@/assets/wc-vintage-pune-large.jpg";
 import wcGodaGhat from "@/assets/wc-goda-ghat.jpg";
-import acylicVenice from "@/assets/acrylic-venice.jpg";
-import acrylicPco from "@/assets/acrylic-pco.jpg";
+import acrylic1 from "@/assets/1_(2).jpg";
+import acrylic2 from "@/assets/2_(2).jpg";
+import acrylic3 from "@/assets/3_(2).jpg";
+import acrylic4 from "@/assets/4_(2).jpg";
 import Lightbox from "@/components/Lightbox";
 
 const categories = ["Watercolours", "Acrylics", "Sketchbooks & Studies"] as const;
@@ -42,8 +44,10 @@ const artworks: Artwork[] = [
   { title: "Vintage Pune Corner", size: "14 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcVintagePuneLarge, category: "Watercolours" },
   { title: "Goda Ghat, Nashik", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcGodaGhat, category: "Watercolours" },
   { title: "Lake Reflections, Lonavala", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: artworkWatercolor, category: "Watercolours" },
-  { title: "Coastal Sunset, Ratnagiri", size: "30 × 40 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylicPco, category: "Acrylics" },
-  { title: "Venice Evening", size: "24 × 36 in", medium: "Acrylic on Canvas", year: "2023", availability: "Sold", image: acylicVenice, category: "Acrylics" },
+  { title: "Venetian Canal", size: "24 × 30 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic1, category: "Acrylics" },
+  { title: "Urban Reflections", size: "20 × 24 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic2, category: "Acrylics" },
+  { title: "Historic Passage", size: "18 × 24 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic3, category: "Acrylics" },
+  { title: "Architectural Study", size: "20 × 26 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic4, category: "Acrylics" },
   { title: "Afternoon Study, Pune", size: "9 × 12 in", medium: "Pencil & Wash", year: "2024", availability: "Not for Sale", image: artworkSketch, category: "Sketchbooks & Studies" },
 ];
 

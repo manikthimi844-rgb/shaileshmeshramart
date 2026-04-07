@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import artwork1 from "@/assets/artwork-1.jpg";
 import artworkThimi from "@/assets/artwork-thimi.jpg";
 import artworkVenice from "@/assets/artwork-venice.jpg";
+import acrylicVenice from "@/assets/acrylic-venice.jpg";
+import acrylicPco from "@/assets/acrylic-pco.jpg";
+import wcMarket from "@/assets/watercolor-market.jpg";
+import wcStreet from "@/assets/watercolor-street.jpg";
+import wcWindows from "@/assets/watercolor-windows.jpg";
+import wcGate from "@/assets/watercolor-gate.jpg";
 import Lightbox from "@/components/Lightbox";
 
 const slides = [
@@ -11,16 +17,31 @@ const slides = [
   { image: artworkVenice, alt: "Venice Canal" },
 ];
 
-const works = [
+const acrylicWorks = [
+  { title: "Venice Canal", medium: "Oil on Canvas", year: "2022", image: acrylicVenice },
+  { title: "Urban Fragment", medium: "Acrylic on Canvas", year: "2023", image: acrylicPco },
   { title: "Auto Rickshaws in Rain", medium: "Oil on Canvas", year: "2023", image: artwork1 },
-  { title: "Thimi Village, Nepal", medium: "Watercolour on Paper", year: "2024", image: artworkThimi },
-  { title: "Venice Canal", medium: "Oil on Canvas", year: "2022", image: artworkVenice },
+];
+
+const watercolorWorks = [
+  { title: "Market Street, Pune", medium: "Watercolour on Paper", year: "2024", image: wcMarket },
+  { title: "Old Town, Pune", medium: "Watercolour on Paper", year: "2024", image: wcStreet },
+  { title: "Red Windows", medium: "Watercolour on Paper", year: "2026", image: wcWindows },
+  { title: "The Red Gate", medium: "Watercolour on Paper", year: "2023", image: wcGate },
 ];
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-  const lightboxImages = works.map((w) => ({ src: w.image, alt: w.title }));
+  const [lightboxSection, setLightboxSection] = useState<"acrylic" | "watercolor">("acrylic");
+
+  const currentWorks = lightboxSection === "acrylic" ? acrylicWorks : watercolorWorks;
+  const lightboxImages = currentWorks.map((w) => ({ src: w.image, alt: w.title }));
+
+  const openLightbox = (section: "acrylic" | "watercolor", index: number) => {
+    setLightboxSection(section);
+    setLightboxIndex(index);
+  };
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -35,7 +56,6 @@ const Home = () => {
     <div>
       {/* Hero Slider */}
       <section className="relative h-screen flex items-center">
-        {/* Slides */}
         {slides.map((slide, i) => (
           <div
             key={i}
@@ -53,8 +73,8 @@ const Home = () => {
           </div>
         ))}
 
-        {/* Text on left */}
-        <div className="relative page-container flex items-center h-full">
+        {/* Text on left – pushed further left with pl */}
+        <div className="relative w-full h-full flex items-center px-6 sm:px-10 md:px-16 lg:px-20">
           <div className="max-w-xl text-primary-foreground">
             <p className="label-text mb-4 !text-primary-foreground/70">Contemporary Artist</p>
             <h1 className="heading-display !text-primary-foreground mb-4">Shailesh Meshram</h1>
@@ -90,23 +110,34 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Selected Works Preview */}
+      {/* Recent Acrylic Paintings */}
       <section className="section-spacing">
         <div className="page-container">
           <p className="label-text mb-3">Selected Works</p>
-          <h2 className="heading-section mb-12">Recent Paintings</h2>
+          <h2 className="heading-section mb-12">Recent Acrylic Paintings</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {works.map((work, i) => (
-              <div key={i} className="artwork-card block overflow-hidden cursor-pointer" onClick={() => setLightboxIndex(i)}>
+            {acrylicWorks.map((work, i) => (
+              <div key={i} className="artwork-card block overflow-hidden cursor-pointer" onClick={() => openLightbox("acrylic", i)}>
                 <div className="aspect-[4/3] overflow-hidden bg-muted mb-4">
-                  <img
-                    src={work.image}
-                    alt={work.title}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    width={1200}
-                    height={900}
-                  />
+                  <img src={work.image} alt={work.title} className="w-full h-full object-cover" loading="lazy" width={1200} height={900} />
+                </div>
+                <h3 className="heading-sub text-lg mb-1">{work.title}</h3>
+                <p className="body-text text-sm">{work.medium} · {work.year}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Recent Watercolour Paintings */}
+      <section className="section-spacing">
+        <div className="page-container">
+          <h2 className="heading-section mb-12">Recent Watercolour Paintings</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {watercolorWorks.map((work, i) => (
+              <div key={i} className="artwork-card block overflow-hidden cursor-pointer" onClick={() => openLightbox("watercolor", i)}>
+                <div className="aspect-[4/3] overflow-hidden bg-muted mb-4">
+                  <img src={work.image} alt={work.title} className="w-full h-full object-cover" loading="lazy" width={1200} height={900} />
                 </div>
                 <h3 className="heading-sub text-lg mb-1">{work.title}</h3>
                 <p className="body-text text-sm">{work.medium} · {work.year}</p>

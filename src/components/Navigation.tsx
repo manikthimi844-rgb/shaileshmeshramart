@@ -17,7 +17,7 @@ const Navigation = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm">
-      <nav className="page-container flex items-center justify-between h-16 md:h-20">
+      <nav className="page-container flex items-center justify-between h-16 md:h-20 -ml-4">
         <Link to="/" className="flex items-center">
           <img src={logo} alt="Shailesh Meshram - Art by SM" className="h-16 md:h-20" />
         </Link>

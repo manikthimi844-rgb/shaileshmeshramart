@@ -11,6 +11,9 @@ const About = () => (
           <div style={{ flex: 1, minWidth: 0 }}>
             <p className="label-text" style={{ marginBottom: "0.5rem" }}>About the Artist</p>
             <h1 className="heading-display" style={{ marginBottom: "1rem" }}>Shailesh Meshram</h1>
+            <p style={{ fontSize: "0.8rem", color: "#888", marginBottom: "1.5rem", letterSpacing: "0.05em" }}>
+              Born 20 December 1972, Nagpur · BFA, Government Chitrakala Mahavidyalaya, Nagpur (1996)
+            </p>
             <div style={{ marginBottom: "2rem" }}>
               <p className="body-text" style={{ marginBottom: "1rem" }}>
                 Shailesh is an old soul. He is a prolific painter despite being a full-time advertising professional. Hailing from Nagpur, and trained in Applied Arts, Shailesh chose Pune as his Karma Bhumi.

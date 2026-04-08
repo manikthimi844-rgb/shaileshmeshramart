@@ -73,7 +73,7 @@ const Home = () => {
           </div>
         ))}
 
-        <div className="relative w-full h-full flex items-center px-6 sm:px-10 md:px-16 lg:px-20">
+        <div className="relative w-full h-full flex items-center page-container">
           <div className="max-w-xl text-primary-foreground">
             <p className="label-text mb-4 !text-primary-foreground/70">Contemporary Artist</p>
             <h1 className="heading-display !text-primary-foreground mb-4">Shailesh Meshram</h1>

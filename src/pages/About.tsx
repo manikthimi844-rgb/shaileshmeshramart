@@ -12,7 +12,7 @@ const About = () => (
             <p className="label-text" style={{ marginBottom: "0.5rem" }}>About the Artist</p>
             <h1 className="heading-display" style={{ marginBottom: "1rem" }}>Shailesh Meshram</h1>
             <p style={{ fontSize: "0.8rem", color: "#888", marginBottom: "1.5rem", letterSpacing: "0.05em" }}>
-              Nagpur · BFA, Government Chitrakala Mahavidyalaya, Nagpur (1996)
+              BFA, Government Chitrakala Mahavidyalaya, Nagpur (1996)
             </p>
             <div style={{ marginBottom: "2rem" }}>
               <p className="body-text" style={{ marginBottom: "1rem" }}>

@@ -20,7 +20,7 @@ const slides = [
 const watercolorWorks = [
   { title: "Market Street, Pune", medium: "Watercolour on Paper", size: "11''×8''", year: "2026", availability: "Available", image: wcMarket },
   { title: "Omkareshwar, Nashik", medium: "Watercolour on Paper", size: "14.5''×18''", year: "2026", availability: "Available", image: wcStreet },
-  { title: "Red Windows, Nagarkhana, Pune", medium: "Watercolour on Paper", size: "11''×8''", year: "2026", availability: "Available", image: wcWindows },
+  { title: "Nagarkhana, Pune", medium: "Watercolour on Paper", size: "11''×8''", year: "2026", availability: "Available", image: wcWindows },
   { title: "Winter Light, Pune", medium: "Watercolour on Paper", size: "11''×8''", year: "2026", availability: "Available", image: wcGate },
 ];
 

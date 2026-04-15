@@ -1,12 +1,10 @@
 import { useState } from "react";
-import artworkWatercolor from "@/assets/artwork-watercolor.jpg";
-import artworkAcrylic from "@/assets/artwork-acrylic.jpg";
-import artworkSketch from "@/assets/artwork-sketch.jpg";
+import artworkSketch from "@/assets/sketch-studies.jpg";
 import wcstreetkathmandu from "@/assets/wc-street-kathmandu.jpg";
-import  img_0017 from "@/assets/img_0017.jpg";
-import  wcLadakh from "@/assets/wc-Ladakh.jpg";
-import  wcitalysquare from "@/assets/wc-italy-square.jpg";
-import  wcpainting from "@/assets/wc-painting.jpg";
+import img_0017 from "@/assets/img_0017.jpg";
+import wcLadakh from "@/assets/wc-Ladakh.jpg";
+import wcitalysquare from "@/assets/wc-italy-square.jpg";
+import wcpainting from "@/assets/wc-painting.jpg";
 import wcKashi from "@/assets/wc-kashi.jpg";
 import wcPuneMorning from "@/assets/wc-pune-morning.jpg";
 import wcRedWindows from "@/assets/wc-red-windows.jpg";
@@ -20,9 +18,6 @@ import wcGodaGhat from "@/assets/wc-goda-ghat.jpg";
 import acrylic1 from "@/assets/1_(2).jpg";
 import acrylic2 from "@/assets/2_(2).jpg";
 import acrylic3 from "@/assets/3_(2).jpg";
-import acrylic4 from "@/assets/4_(2).jpg";
-import acrylic5 from "@/assets/5_(2).jpg";
-import acrylic6 from "@/assets/6_(2).jpg";
 import acrylic7 from "@/assets/7_(2).jpg";
 import acrylic8 from "@/assets/8_(2).jpg";
 import acrylicPainting from "@/assets/1.jpg";
@@ -43,30 +38,28 @@ interface Artwork {
 }
 
 const artworks: Artwork[] = [
-  { title: "Kashi Ghats", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcKashi, category: "Watercolours" },
-  { title: "Pune Morning", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcPuneMorning, category: "Watercolours" },
-  { title: "Red Windows", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcRedWindows, category: "Watercolours" },
+  { title: "Kashi Ghats, Varanasi", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Not Available", image: wcKashi, category: "Watercolours" },
+  { title: "Pune Morning, Wada, Nashik", size: "14.5'' × 18''", medium: "Watercolour on Paper", year: "2026", availability: "Available", image: wcPuneMorning, category: "Watercolours" },
+  { title: "Red Windows, Nagarkhana, Pune", size: "11'' × 8''", medium: "Watercolour on Paper", year: "2026", availability: "Available", image: wcRedWindows, category: "Watercolours" },
   { title: "Vintage Pune", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2022", availability: "Available", image: wcVintagePune, category: "Watercolours" },
-  { title: "Afternoon Light", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2020", availability: "Sold", image: wcPainting2, category: "Watercolours" },
-  { title: "Market Light", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcMarketLight, category: "Watercolours" },
-  { title: "Street Scene, Pune", size: "10 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcStreetScene, category: "Watercolours" },
-  { title: "Bazaar Morning, Pune", size: "10 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: img_0017 , category: "Watercolours" },
-  { title: "Ladakh", size: "11 × 15 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcLadakh, category: "Watercolours" },
-  { title: "Old City Lane, Pune", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcpainting, category: "Watercolours" }, 
-  { title: "Italy square", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcitalysquare, category: "Watercolours" },
-  { title: "Solitary Boat", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcBoat, category: "Watercolours" },
-  { title: "Vintage Pune Corner", size: "14 × 16 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcVintagePuneLarge, category: "Watercolours" },
-  { title: "Mandai Market, Pune", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image:  wcstreetkathmandu, category: "Watercolours" },
-  { title: "Goda Ghat, Nashik", size: "10 × 10 in", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcGodaGhat, category: "Watercolours" },
-  { title: "Venetian Canal", size: "24 × 30 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic1, category: "Acrylics" },
-  { title: "Urban Reflections", size: "20 × 24 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic2, category: "Acrylics" },
-  { title: "Historic Passage", size: "18 × 24 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic3, category: "Acrylics" },
-  { title: "Architectural Study", size: "20 × 26 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic4, category: "Acrylics" },
-  { title: "Harbor Serenity", size: "22 × 28 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic5, category: "Acrylics" },
-  { title: "Urban Marketplace", size: "18 × 22 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic7, category: "Acrylics" },
-  { title: "Industrial Textures", size: "24 × 32 in", medium: "Acrylic on Canvas", year: "2024", availability: "Available", image: acrylic8, category: "Acrylics" },
-  { title: "Street Vignette", size: "12 × 16 in", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylicPainting, category: "Acrylics" },
-  { title: "Afternoon Study, Pune", size: "9 × 12 in", medium: "Pencil & Wash", year: "2024", availability: "Not for Sale", image: artworkSketch, category: "Sketchbooks & Studies" },
+  { title: "Afternoon Light, Thimi Village", size: "11'' × 8''", medium: "Watercolour on Paper", year: "2026", availability: "Available", image: wcPainting2, category: "Watercolours" },
+  { title: "Market Light, Market Street, Pune", size: "11'' × 8''", medium: "Watercolour on Paper", year: "2026", availability: "Available", image: wcMarketLight, category: "Watercolours" },
+  { title: "Street Scene, Omkareshwar, Nashik", size: "14.5'' × 18''", medium: "Watercolour on Paper", year: "2026", availability: "Available", image: wcStreetScene, category: "Watercolours" },
+  { title: "Bazaar Morning, Wada, Pune", size: "10 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: img_0017, category: "Watercolours" },
+  { title: "Ladakh, Leh", size: "11'' × 8''", medium: "Watercolour on Paper", year: "2026", availability: "Not Available", image: wcLadakh, category: "Watercolours" },
+  { title: "Old City Lane, Nashik", size: "9'' × 12''", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcpainting, category: "Watercolours" },
+  { title: "Italy Square, Fabriano, Italy", size: "10'' × 12''", medium: "Watercolour on Paper", year: "2023", availability: "Not Available", image: wcitalysquare, category: "Watercolours" },
+  { title: "Solitary Boat, Goa", size: "8'' × 8''", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcBoat, category: "Watercolours" },
+  { title: "Vintage Pune Corner, Wada, Pune", size: "14.5'' × 18''", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcVintagePuneLarge, category: "Watercolours" },
+  { title: "Mandai Market, Pune", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2023", availability: "Not Available", image: wcstreetkathmandu, category: "Watercolours" },
+  { title: "Goda Ghat, Nashik", size: "8'' × 8''", medium: "Watercolour on Paper", year: "2022", availability: "Available", image: wcGodaGhat, category: "Watercolours" },
+  { title: "Venetian Canal, Venice", size: "12'' × 12''", medium: "Acrylic on Canvas", year: "2026", availability: "Available", image: acrylic1, category: "Acrylics" },
+  { title: "Urban Reflections, Venice", size: "12'' × 12''", medium: "Acrylic on Canvas", year: "2026", availability: "Available", image: acrylic2, category: "Acrylics" },
+  { title: "Historic Passage, Wada, Pune", size: "24'' × 24''", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic3, category: "Acrylics" },
+  { title: "Urban Marketplace", size: "24'' × 24''", medium: "Acrylic on Canvas", year: "2018", availability: "Not Available", image: acrylic7, category: "Acrylics" },
+  { title: "Industrial Textures, Old Shop, Pune", size: "48'' × 48''", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic8, category: "Acrylics" },
+  { title: "Street Vignette, Kasba Peth, Pune", size: "24'' × 24''", medium: "Acrylic on Canvas", year: "2023", availability: "Not Available", image: acrylicPainting, category: "Acrylics" },
+  { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: artworkSketch, category: "Sketchbooks & Studies" },
 ];
 
 const Work = () => {
@@ -107,7 +100,7 @@ const Work = () => {
                 />
               </div>
               <h3 className="font-serif text-lg mb-1">{work.title}</h3>
-              <p className="body-text text-sm">{work.medium} · {work.size}</p>
+              <p className="body-text text-sm">{work.medium}{work.size ? ` · ${work.size}` : ""}</p>
               <p className="body-text text-sm">{work.year} · <span className={work.availability === "Available" ? "text-accent" : ""}>{work.availability}</span></p>
             </div>
           ))}

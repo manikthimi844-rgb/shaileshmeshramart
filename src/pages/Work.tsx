@@ -38,7 +38,7 @@ interface Artwork {
 }
 
 const artworks: Artwork[] = [
-  { title: "Kashi Ghats, Varanasi", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Not Available", image: wcKashi, category: "Watercolours" },
+  { title: "Kashi Ghats, Varanasi", size: "14 × 20 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcKashi, category: "Watercolours" },
   { title: "Pune Morning, Wada, Nashik", size: "14.5'' × 18''", medium: "Watercolour on Paper", year: "2026", availability: "Available", image: wcPuneMorning, category: "Watercolours" },
   { title: "Red Windows, Nagarkhana, Pune", size: "11'' × 8''", medium: "Watercolour on Paper", year: "2026", availability: "Available", image: wcRedWindows, category: "Watercolours" },
   { title: "Vintage Pune", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2022", availability: "Available", image: wcVintagePune, category: "Watercolours" },

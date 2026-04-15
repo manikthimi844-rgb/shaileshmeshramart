@@ -58,7 +58,7 @@ const About = () => (
                 display: "block",
                 objectFit: "cover",
                 objectPosition: "top",
-                filter: "grayscale(100%)",
+                
                 borderRadius: "2px",
                 boxShadow: "0 4px 20px rgba(0,0,0,0.15)"
               }}

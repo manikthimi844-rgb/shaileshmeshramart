@@ -1,9 +1,5 @@
-import workshopImg from "@/assets/workshop.jpg";
-
-const workshops = [
-  { title: "Plein Air in the Western Ghats", date: "April 12–14, 2025", location: "Mahabaleshwar", spots: "6 spots left", price: "₹12,000" },
-  { title: "Watercolour & Light Workshop", date: "May 3–4, 2025", location: "Pune Studio", spots: "Open", price: "₹6,000" },
-];
+import workshopImg1 from "@/assets/workshop-collage-1.jpg";
+import workshopImg2 from "@/assets/workshop-collage-2.jpg";
 
 const testimonials = [
   { text: "Shailesh's approach to seeing light completely changed how I paint. An unforgettable experience.", name: "Priya Deshpande", role: "Workshop Participant, 2024" },
@@ -21,22 +17,14 @@ const Workshops = () => (
         immersive workshops designed for both emerging and experienced artists.
       </p>
 
-      {/* Hero Image */}
-      <div className="aspect-[16/7] overflow-hidden bg-muted mb-16">
-        <img src={workshopImg} alt="Plein air painting workshop" className="w-full h-full object-cover" loading="lazy" width={1200} height={800} />
-      </div>
-
-      {/* Upcoming Workshops */}
-      <h2 className="heading-section mb-8">Upcoming Workshops</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        {workshops.map((w, i) => (
-          <div key={i} className="border border-border p-8">
-            <h3 className="font-serif text-xl mb-2">{w.title}</h3>
-            <p className="body-text text-sm mb-1">{w.date} · {w.location}</p>
-            <p className="body-text text-sm mb-4">{w.spots} · {w.price}</p>
-            <button className="btn-primary">Register Now</button>
-          </div>
-        ))}
+      {/* Hero Images */}
+      <div className="grid grid-cols-1 gap-8 mb-16">
+        <div className="overflow-hidden bg-muted">
+          <img src={workshopImg1} alt="Plein air painting workshop moments" className="w-full h-auto object-cover" loading="lazy" width={1200} height={800} />
+        </div>
+        <div className="overflow-hidden bg-muted">
+          <img src={workshopImg2} alt="Workshop sessions and group activities" className="w-full h-auto object-cover" loading="lazy" width={1200} height={800} />
+        </div>
       </div>
 
       {/* Testimonials */}

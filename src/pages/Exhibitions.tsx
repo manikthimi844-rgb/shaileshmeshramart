@@ -80,7 +80,7 @@ const Exhibitions = () => (
         {/* Upcoming Exhibition */}
         <div className="bg-accent/5 border border-accent/20 rounded-sm p-6 flex flex-col justify-center">
           <p className="label-text text-accent mb-3 uppercase tracking-widest">Upcoming</p>
-          <h3 className="heading-display text-base mb-4">Solo Exhibition</h3>
+          <h3 className="heading-display text-base mb-4">Exhibition</h3>
           <p className="body-text mb-6">
             <span className="font-semibold">11 – 17 August 2026</span>
           </p>

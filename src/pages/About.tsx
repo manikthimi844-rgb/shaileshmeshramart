@@ -1,4 +1,5 @@
-import artistPortrait from "@/assets/image.png";
+import artistPortrait from "@/assets/artist-portrait-new.jpg";
+import artistPleinair from "@/assets/artist-pleinair.jpg";
 
 const About = () => (
   <div className="section-spacing">
@@ -28,6 +29,22 @@ const About = () => (
             <blockquote className="quote-block">
               "I am less interested in painting a location, and more drawn to painting what the moment feels like."
             </blockquote>
+
+            {/* Plein Air collage */}
+            <div style={{ marginTop: "2rem" }}>
+              <img
+                src={artistPleinair}
+                alt="Shailesh Meshram painting en plein air"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  display: "block",
+                  objectFit: "cover",
+                  borderRadius: "2px",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.10)"
+                }}
+              />
+            </div>
           </div>
 
           {/* Photo - RIGHT */}

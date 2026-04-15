@@ -18,16 +18,16 @@ const slides = [
 ];
 
 const watercolorWorks = [
-  { title: "Market Street, Pune", medium: "Watercolour on Paper", year: "2024", image: wcMarket },
-  { title: "Old Town, Pune", medium: "Watercolour on Paper", year: "2024", image: wcStreet },
-  { title: "Red Windows", medium: "Watercolour on Paper", year: "2026", image: wcWindows },
-  { title: "The Red Gate", medium: "Watercolour on Paper", year: "2023", image: wcGate },
+  { title: "Market Street, Pune", medium: "Watercolour on Paper", size: "11''×8''", year: "2026", availability: "Available", image: wcMarket },
+  { title: "Omkareshwar, Nashik", medium: "Watercolour on Paper", size: "14.5''×18''", year: "2026", availability: "Available", image: wcStreet },
+  { title: "Red Windows, Nagarkhana, Pune", medium: "Watercolour on Paper", size: "11''×8''", year: "2026", availability: "Available", image: wcWindows },
+  { title: "Winter Light, Pune", medium: "Watercolour on Paper", size: "11''×8''", year: "2026", availability: "Available", image: wcGate },
 ];
 
 const acrylicWorks = [
-  { title: "Venice Canal", medium: "Oil on Canvas", year: "2022", image: acrylicVenice },
-  { title: "Urban Fragment", medium: "Acrylic on Canvas", year: "2023", image: acrylicPco },
-  { title: "Auto Rickshaws in Rain", medium: "Oil on Canvas", year: "2023", image: artwork1 },
+  { title: "Venice", medium: "Acrylic on Canvas", size: "12''×12''", year: "2026", availability: "Available", image: acrylicVenice },
+  { title: "Old Shop, Pune", medium: "Acrylic on Canvas", size: "48''×48''", year: "2023", availability: "Available", image: acrylicPco },
+  { title: "Kasba Peth, Pune", medium: "Acrylic on Canvas", size: "24''×24''", year: "2023", availability: "Not Available", image: artwork1 },
 ];
 
 const Home = () => {
@@ -120,7 +120,8 @@ const Home = () => {
                   <img src={work.image} alt={work.title} className="w-full h-full object-cover" loading="lazy" width={1200} height={900} />
                 </div>
                 <h3 className="heading-sub text-lg mb-1">{work.title}</h3>
-                <p className="body-text text-sm">{work.medium} · {work.year}</p>
+                <p className="body-text text-sm">{work.medium} · {work.size} · {work.year}</p>
+                <p className="body-text text-sm"><span className={work.availability === "Available" ? "text-accent" : ""}>{work.availability}</span></p>
               </div>
             ))}
           </div>
@@ -138,7 +139,8 @@ const Home = () => {
                   <img src={work.image} alt={work.title} className="w-full h-full object-cover" loading="lazy" width={1200} height={900} />
                 </div>
                 <h3 className="heading-sub text-lg mb-1">{work.title}</h3>
-                <p className="body-text text-sm">{work.medium} · {work.year}</p>
+                <p className="body-text text-sm">{work.medium} · {work.size} · {work.year}</p>
+                <p className="body-text text-sm"><span className={work.availability === "Available" ? "text-accent" : ""}>{work.availability}</span></p>
               </div>
             ))}
           </div>

@@ -1,4 +1,6 @@
 import { Star } from "lucide-react";
+import epf from "@/assets/epf.jpg";
+import eps from "@/assets/eps.jpg";
 
 const shows = [
   { year: "1992", desc: "Youth Festival, Gulbarga (Silver Medal in Collage Competition)", highlight: false },
@@ -26,6 +28,7 @@ const shows = [
   { year: "2024", desc: "'Chitra Sanman Puraskar' by Vidarbha Gaurav Prathisthan, Nagpur", highlight: true },
   { year: "2025", desc: "Group Show of Watercolour Paintings – Selected 8 Artist Group Show", highlight: false },
   { year: "2025", desc: "'Pune Watercolour Collective' – Pune Theme Paintings", highlight: false },
+  { year: "2026", desc: "11 to 17 August – Jehangir Art Gallery, Mumbai", highlight: true, isUpcoming: true },
 ];
 
 const Exhibitions = () => (
@@ -37,6 +40,30 @@ const Exhibitions = () => (
         A journey spanning over three decades — from early recognitions at youth festivals
         to international biennales and prestigious solo shows across India and Europe.
       </p>
+
+      {/* Exhibition Images */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="overflow-hidden bg-muted rounded-sm">
+          <img
+            src={epf}
+            alt="Exhibition showcase - Hearts Capes"
+            className="w-full h-full object-cover"
+            loading="lazy"
+            width={800}
+            height={600}
+          />
+        </div>
+        <div className="overflow-hidden bg-muted rounded-sm">
+          <img
+            src={eps}
+            alt="Exhibition opening and visitors"
+            className="w-full h-full object-cover"
+            loading="lazy"
+            width={800}
+            height={600}
+          />
+        </div>
+      </div>
 
       <div className="space-y-3">
         {shows.map((s, i) => (

@@ -64,11 +64,11 @@ const artworks: Artwork[] = [
   { title: "Marketplace", size: "24'' × 24''", medium: "Acrylic on Canvas", year: "2018", availability: "Not Available", image: acrylic7, category: "Acrylics" },
   { title: "Old Shop, Pune", size: "48'' × 48''", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic8, category: "Acrylics" },
   { title: "Kasba Peth, Pune", size: "24'' × 24''", medium: "Acrylic on Canvas", year: "2023", availability: "Not Available", image: acrylicPainting, category: "Acrylics" },
-  { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: sk2 , category: "Sketchbooks & Studies" },
-  { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: sk3, category: "Sketchbooks & Studies" },
-  { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: sk4, category: "Sketchbooks & Studies" },
-  { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: sk5, category: "Sketchbooks & Studies" },
-  { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: sk6, category: "Sketchbooks & Studies" },
+  { title: "Urban Sketch Study", size: "", medium: "Graphite & Ink on Paper", year: "2024", availability: "Not for Sale", image: sk2 , category: "Sketchbooks & Studies" },
+  { title: "Architectural Details", size: "", medium: "Pen & Wash", year: "2024", availability: "Not for Sale", image: sk3, category: "Sketchbooks & Studies" },
+  { title: "Figure Study", size: "", medium: "Charcoal & Ink", year: "2024", availability: "Not for Sale", image: sk4, category: "Sketchbooks & Studies" },
+  { title: "Street Scene Composition", size: "", medium: "Graphite & Color Pencil", year: "2024", availability: "Not for Sale", image: sk5, category: "Sketchbooks & Studies" },
+  { title: "Landscape Exploration", size: "", medium: "Watercolor & Pencil", year: "2024", availability: "Not for Sale", image: sk6, category: "Sketchbooks & Studies" },
   { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: artworkSketch, category: "Sketchbooks & Studies" },
 ];
 

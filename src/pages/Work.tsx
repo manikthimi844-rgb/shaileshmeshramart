@@ -1,10 +1,10 @@
 import { useState } from "react";
 import artworkSketch from "@/assets/sketch-studies.jpg";
-import  from "@/assets/";
-import  from "@/assets/";
-import  from "@/assets/";
-import  from "@/assets/";
-import  from "@/assets/";
+import sk2 from "@/assets/sk-2.jpg";
+import sk3 from "@/assets/sk3.jpg";
+import sk4 from "@/assets/sk4.jpg";
+import sk5 from "@/assets/sk5.jpg";
+import sk6 from "@/assets/sk6.jpg";
 import wcstreetkathmandu from "@/assets/wc-street-kathmandu.jpg";
 import img_0017 from "@/assets/img_0017.jpg";
 import wcLadakh from "@/assets/wc-Ladakh.jpg";
@@ -64,6 +64,11 @@ const artworks: Artwork[] = [
   { title: "Marketplace", size: "24'' × 24''", medium: "Acrylic on Canvas", year: "2018", availability: "Not Available", image: acrylic7, category: "Acrylics" },
   { title: "Old Shop, Pune", size: "48'' × 48''", medium: "Acrylic on Canvas", year: "2023", availability: "Available", image: acrylic8, category: "Acrylics" },
   { title: "Kasba Peth, Pune", size: "24'' × 24''", medium: "Acrylic on Canvas", year: "2023", availability: "Not Available", image: acrylicPainting, category: "Acrylics" },
+  { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: sk2 , category: "Sketchbooks & Studies" },
+  { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: sk3, category: "Sketchbooks & Studies" },
+  { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: sk4, category: "Sketchbooks & Studies" },
+  { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: sk5, category: "Sketchbooks & Studies" },
+  { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: sk6, category: "Sketchbooks & Studies" },
   { title: "Sketchbooks & Studies", size: "", medium: "Mixed Media", year: "2024", availability: "Not for Sale", image: artworkSketch, category: "Sketchbooks & Studies" },
 ];
 

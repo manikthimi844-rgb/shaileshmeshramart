@@ -1,5 +1,10 @@
 import { useState } from "react";
 import artworkSketch from "@/assets/sketch-studies.jpg";
+import  from "@/assets/";
+import  from "@/assets/";
+import  from "@/assets/";
+import  from "@/assets/";
+import  from "@/assets/";
 import wcstreetkathmandu from "@/assets/wc-street-kathmandu.jpg";
 import img_0017 from "@/assets/img_0017.jpg";
 import wcLadakh from "@/assets/wc-Ladakh.jpg";

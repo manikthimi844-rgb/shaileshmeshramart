@@ -1,14 +1,5 @@
 import { Star } from "lucide-react";
 import epf from "@/assets/epf.jpg";
-
-
-
-
-
-
-
-
-
 import eps from "@/assets/eps.jpg";
 
 const shows = [

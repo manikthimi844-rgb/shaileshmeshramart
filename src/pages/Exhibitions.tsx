@@ -47,22 +47,23 @@ const Exhibitions = () => (
           <div className="space-y-8">
             <div className="overflow-hidden bg-muted rounded-sm">
               <img
-                src={eps}
-                alt="Exhibition opening and visitors"
-                className="w-full h-auto object-contain"
+                src={epf}
+                alt="Exhibition showcase - Hearts Capes"
+                className="w-full h-auto"
+                style={{ imageRendering: "auto" }}
                 loading="lazy"
-                width={800}
-                height={600}
+                width={1600}
+                height={1200}
               />
             </div>
             <div className="overflow-hidden bg-muted rounded-sm">
               <img
-                src={epf}
-                alt="Exhibition showcase - Hearts Capes"
-                className="w-full h-auto object-contain"
+                src={eps}
+                alt="Exhibition opening and visitors"
+                className="w-full h-auto"
                 loading="lazy"
-                width={800}
-                height={600}
+                width={1600}
+                height={1200}
               />
             </div>
           </div>

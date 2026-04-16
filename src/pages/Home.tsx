@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import artwork1 from "@/assets/artwork-1.jpg";
 import artworkThimi from "@/assets/artwork-thimi.jpg";
-import artworkVenice from "@/assets/artwork-venice.jpg";
+import acrylic3 from "@/assets/3_(2).jpg";
 import acrylicVenice from "@/assets/acrylic-venice.jpg";
 import acrylicPco from "@/assets/acrylic-pco.jpg";
 import wcMarket from "@/assets/watercolor-market.jpg";
@@ -14,7 +14,7 @@ import Lightbox from "@/components/Lightbox";
 const slides = [
   { image: artwork1, alt: "Auto rickshaws in rain" },
   { image: artworkThimi, alt: "Thimi Village, Nepal" },
-  { image: wcWindows, alt: "Nagarkhana, Pune" },
+  { image: acrylic3, alt: "wada pune" },
 ];
 
 const watercolorWorks = [

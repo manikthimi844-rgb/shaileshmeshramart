@@ -1,5 +1,5 @@
 import artistPortrait from "@/assets/artist-portrait-new.jpg";
-import artistPleinair from "@/assets/artist-pleinair.jpg";
+import apd from "@/assets/apd.jpg";
 
 const About = () => (
   <div className="section-spacing">
@@ -69,7 +69,7 @@ const About = () => (
       {/* Full-width plein air collage */}
       <div style={{ marginTop: "1rem", display: "flex", justifyContent: "center" }}>
         <img
-          src={artistPleinair}
+          src={apd}
           alt="Shailesh Meshram painting en plein air"
           style={{
             width: "65%",

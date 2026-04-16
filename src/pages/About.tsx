@@ -67,12 +67,12 @@ const About = () => (
       </div>
 
       {/* Full-width plein air collage */}
-      <div style={{ marginTop: "1rem" }}>
+      <div style={{ marginTop: "1rem", display: "flex", justifyContent: "center" }}>
         <img
           src={artistPleinair}
           alt="Shailesh Meshram painting en plein air"
           style={{
-            width: "100%",
+            width: "80%",
             height: "auto",
             display: "block",
             objectFit: "cover",

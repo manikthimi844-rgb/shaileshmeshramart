@@ -62,7 +62,7 @@ const Exhibitions = () => (
               className="w-full h-auto"
               loading="lazy"
               width={1600}
-              height={1200}
+              height={1400}
             />
           </div>
           {/* Upcoming Exhibition */}

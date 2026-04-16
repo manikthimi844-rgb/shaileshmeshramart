@@ -62,7 +62,7 @@ const Exhibitions = () => (
               className="w-full "
               loading="lazy"
               width={1600}
-              height={2400}
+              height={2600}
             />
           </div>
           {/* Upcoming Exhibition */}

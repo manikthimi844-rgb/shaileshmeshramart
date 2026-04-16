@@ -1,5 +1,5 @@
 import artistPortrait from "@/assets/artist-portrait-new.jpg";
-import untitled206 from "@/assets/untitled-2-06.jpg";
+import apd from "@/assets/apd.jpg";
 
 const About = () => (
   <div className="section-spacing">
@@ -69,7 +69,7 @@ const About = () => (
       {/* Full-width plein air collage */}
       <div style={{ marginTop: "1rem", display: "flex", justifyContent: "center" }}>
         <img
-          src={untitled206}
+          src={apd}
           alt="Shailesh painting  "
           style={{
             width: "65%",

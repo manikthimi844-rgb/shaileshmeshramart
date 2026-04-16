@@ -49,7 +49,7 @@ const Exhibitions = () => (
               <img
                 src={epf}
                 alt="Exhibition showcase - Hearts Capes"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
                 loading="lazy"
                 width={800}
                 height={600}
@@ -59,7 +59,7 @@ const Exhibitions = () => (
               <img
                 src={eps}
                 alt="Exhibition opening and visitors"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
                 loading="lazy"
                 width={800}
                 height={600}

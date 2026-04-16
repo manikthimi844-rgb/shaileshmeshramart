@@ -31,21 +31,6 @@ const About = () => (
             </blockquote>
 
             {/* Plein Air collage */}
-            <div style={{ marginTop: "2rem" }}>
-              <img
-                src={artistPleinair}
-                alt="Shailesh Meshram painting en plein air"
-                style={{
-                  width: "120%",
-                  marginLeft: "-10%",
-                  height: "auto",
-                  display: "block",
-                  objectFit: "cover",
-                  borderRadius: "2px",
-                  boxShadow: "0 4px 20px rgba(0,0,0,0.10)"
-                }}
-              />
-            </div>
           </div>
 
           {/* Photo - RIGHT */}
@@ -59,7 +44,6 @@ const About = () => (
                 display: "block",
                 objectFit: "cover",
                 objectPosition: "top",
-                
                 borderRadius: "2px",
                 boxShadow: "0 4px 20px rgba(0,0,0,0.15)"
               }}
@@ -79,8 +63,23 @@ const About = () => (
               </div>
             </div>
           </div>
-
         </div>
+      </div>
+
+      {/* Full-width plein air collage */}
+      <div style={{ marginTop: "1rem" }}>
+        <img
+          src={artistPleinair}
+          alt="Shailesh Meshram painting en plein air"
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "block",
+            objectFit: "cover",
+            borderRadius: "2px",
+            boxShadow: "0 4px 20px rgba(0,0,0,0.10)"
+          }}
+        />
       </div>
     </div>
   </div>

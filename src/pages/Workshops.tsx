@@ -10,11 +10,11 @@ const Workshops = () => (
   <div className="section-spacing">
     <div className="page-container">
       <p className="label-text mb-3">Learn</p>
-      <h1 className="heading-display mb-4">Paint from Life. See Like an Artist.</h1>
-      <p className="heading-sub font-serif mb-6">Paint From Life — Step into the landscape.</p>
+      <h1 className="heading-display mb-4">Shailesh meshram</h1>
+      <p className="heading-sub font-serif mb-6">Watercolour Workshops & Mentorship Experience</p>
       <p className="body-text max-w-2xl mb-16">
-        Learn to see beyond the obvious. Experience the discipline and joy of plein air painting through
-        immersive workshops designed for both emerging and experienced artists.
+       Shailesh has actively conducted watercolour workshops, sharing techniques, creative approaches, and the joy of expressive painting with learners of all levels. His sessions focus on developing compositions, understanding colour harmony, and mastering fluid brushwork.
+Alongside teaching, Shailesh has had the privilege of working and learning under esteemed master artists. This invaluable mentorship has deeply influenced his artistic practice, strengthening his foundation in traditional techniques while encouraging contemporary exploration. The experience has enriched both his teaching methodology and creative vision, allowing him to guide students with authenticity and depth.
       </p>
 
       {/* Hero Images */}

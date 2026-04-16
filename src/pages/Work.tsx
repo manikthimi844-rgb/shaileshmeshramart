@@ -49,7 +49,7 @@ const artworks: Artwork[] = [
   { title: "Vintage Pune", size: "12 × 12 in", medium: "Watercolour on Paper", year: "2022", availability: "Available", image: wcVintagePune, category: "Watercolours" },
   { title: "Thimi Village", size: "11'' × 8''", medium: "Watercolour on Paper", year: "2026", availability: "Available", image: wcPainting2, category: "Watercolours" },
   { title: "Market Street, Pune", size: "11'' × 8''", medium: "Watercolour on Paper", year: "2026", availability: "Available", image: wcMarketLight, category: "Watercolours" },
-  { title: "Omkareshwar, Nashik", size: "14.5'' × 18''", medium: "Watercolour on Paper", year: "2026", availability: "Available", image: wcStreetScene, category: "Watercolours" },
+  { title: "Trimbakeshwar, Nashik", size: "14.5'' × 18''", medium: "Watercolour on Paper", year: "2026", availability: "Available", image: wcStreetScene, category: "Watercolours" },
   { title: "Wada, Pune", size: "10 × 12 in", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: img_0017, category: "Watercolours" },
   { title: "Leh", size: "11'' × 8''", medium: "Watercolour on Paper", year: "2026", availability: "Not Available", image: wcLadakh, category: "Watercolours" },
   { title: "Lane, Nashik", size: "9'' × 12''", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcpainting, category: "Watercolours" },

@@ -47,8 +47,8 @@ const Exhibitions = () => (
           <div className="space-y-8">
             <div className="overflow-hidden bg-muted rounded-sm">
               <img
-                src={epf}
-                alt="Exhibition showcase - Hearts Capes"
+                src={eps}
+                alt="Exhibition opening and visitors"
                 className="w-full h-auto object-contain"
                 loading="lazy"
                 width={800}
@@ -57,8 +57,8 @@ const Exhibitions = () => (
             </div>
             <div className="overflow-hidden bg-muted rounded-sm">
               <img
-                src={eps}
-                alt="Exhibition opening and visitors"
+                src={epf}
+                alt="Exhibition showcase - Hearts Capes"
                 className="w-full h-auto object-contain"
                 loading="lazy"
                 width={800}

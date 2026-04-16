@@ -59,7 +59,7 @@ const Exhibitions = () => (
             <img
               src={eps}
               alt="Exhibition opening and visitors"
-              className="w-full h-auto"
+              className="w-full "
               loading="lazy"
               width={1600}
               height={2400}

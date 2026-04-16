@@ -66,8 +66,8 @@ const Home = () => {
               src={slide.image}
               alt={slide.alt}
               className="w-full h-full object-cover"
-              width={1920}
-              height={1080}
+              width={1800}
+              height={1000}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/40 to-transparent" />
           </div>

@@ -42,41 +42,38 @@ const Exhibitions = () => (
       </p>
 
       {/* Exhibition Images and Upcoming Show */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16 items-stretch">
-        <div className="lg:col-span-2">
-          <div className="space-y-8">
-            <div className="overflow-hidden bg-muted rounded-sm">
-              <img
-                src={epf}
-                alt="Exhibition showcase - Hearts Capes"
-                className="w-full h-auto"
-                style={{ imageRendering: "auto" }}
-                loading="lazy"
-                width={1600}
-                height={1200}
-              />
-            </div>
-            <div className="overflow-hidden bg-muted rounded-sm">
-              <img
-                src={eps}
-                alt="Exhibition opening and visitors"
-                className="w-full h-auto"
-                loading="lazy"
-                width={1600}
-                height={1200}
-              />
-            </div>
-          </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
+        <div className="overflow-hidden bg-muted rounded-sm">
+          <img
+            src={epf}
+            alt="Exhibition showcase - Hearts Capes"
+            className="w-full h-auto"
+            style={{ imageRendering: "auto" }}
+            loading="lazy"
+            width={1600}
+            height={1200}
+          />
         </div>
-
-        {/* Upcoming Exhibition */}
-        <div className="bg-accent/5 border border-accent/20 rounded-sm p-6 flex flex-col justify-center">
-          <p className="label-text text-accent mb-3 uppercase tracking-widest">Upcoming</p>
-          <h3 className="heading-display text-base mb-4">Exhibition</h3>
-          <p className="body-text mb-6">
-            <span className="font-semibold">11 – 17 August 2026</span>
-          </p>
-          <p className="body-text text-sm">Jehangir Art Gallery, Mumbai</p>
+        <div className="flex flex-col gap-8">
+          <div className="overflow-hidden bg-muted rounded-sm">
+            <img
+              src={eps}
+              alt="Exhibition opening and visitors"
+              className="w-full h-auto"
+              loading="lazy"
+              width={1600}
+              height={1200}
+            />
+          </div>
+          {/* Upcoming Exhibition */}
+          <div className="bg-accent/5 border border-accent/20 rounded-sm p-6 flex flex-col justify-center flex-1">
+            <p className="label-text text-accent mb-3 uppercase tracking-widest">Upcoming</p>
+            <h3 className="heading-display text-base mb-4">Exhibition</h3>
+            <p className="body-text mb-6">
+              <span className="font-semibold">11 – 17 August 2026</span>
+            </p>
+            <p className="body-text text-sm">Jehangir Art Gallery, Mumbai</p>
+          </div>
         </div>
       </div>
 

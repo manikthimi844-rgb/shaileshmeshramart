@@ -9,7 +9,7 @@ const testimonials = [
 const Workshops = () => (
   <div className="section-spacing">
     <div className="page-container">
-      <p className="label-text mb-3">Learn</p>
+      <p className="label-text mb-3"></p>
       <h1 className="heading-display mb-4">Shailesh meshram</h1>
       <p className="heading-sub font-serif mb-6">Watercolour Workshops & Mentorship Experience</p>
       <p className="body-text max-w-2xl mb-16">

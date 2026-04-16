@@ -70,7 +70,7 @@ const About = () => (
       <div style={{ marginTop: "1rem", display: "flex", justifyContent: "center" }}>
         <img
           src={untitled206}
-          alt="Shailesh Meshram painting "
+          alt="Shailesh painting  "
           style={{
             width: "65%",
             height: "auto",

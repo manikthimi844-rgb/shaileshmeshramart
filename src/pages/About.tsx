@@ -36,7 +36,8 @@ const About = () => (
                 src={artistPleinair}
                 alt="Shailesh Meshram painting en plein air"
                 style={{
-                  width: "100%",
+                  width: "120%",
+                  marginLeft: "-10%",
                   height: "auto",
                   display: "block",
                   objectFit: "cover",

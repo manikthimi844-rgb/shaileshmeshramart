@@ -5,7 +5,7 @@ import sk3 from "@/assets/sk3.jpg";
 import sk4 from "@/assets/sk4.jpg";
 import sk5 from "@/assets/sk5.jpg";
 import sk6 from "@/assets/sk6.jpg";
-import wcstreetkathmandu from "@/assets/wc-street-kathmandu.jpg";
+import wi3 from "@/assets/wi3.jpg";
 import img_0017 from "@/assets/img_0017.jpg";
 import wcLadakh from "@/assets/wc-Ladakh.jpg";
 import wcitalysquare from "@/assets/wc-italy-square.jpg";
@@ -56,7 +56,7 @@ const artworks: Artwork[] = [
   { title: "Fabriano, Italy", size: "10'' × 12''", medium: "Watercolour on Paper", year: "2023", availability: "Not Available", image: wcitalysquare, category: "Watercolours" },
   { title: "Solitary Boat, Goa", size: "8'' × 8''", medium: "Watercolour on Paper", year: "2023", availability: "Available", image: wcBoat, category: "Watercolours" },
   { title: "Wada, Pune", size: "14.5'' × 18''", medium: "Watercolour on Paper", year: "2024", availability: "Available", image: wcVintagePuneLarge, category: "Watercolours" },
-  { title: "Mandai Market, Pune", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2023", availability: "Not Available", image: wcstreetkathmandu, category: "Watercolours" },
+  { title: "Mandai Market, Pune", size: "10 × 14 in", medium: "Watercolour on Paper", year: "2023", availability: "Not Available", image: wi3, category: "Watercolours" },
   { title: "Goda Ghat, Nashik", size: "8'' × 8''", medium: "Watercolour on Paper", year: "2022", availability: "Available", image: wcGodaGhat, category: "Watercolours" },
   { title: "Venice", size: "12'' × 12''", medium: "Acrylic on Canvas", year: "2026", availability: "Available", image: acrylic1, category: "Acrylics" },
   { title: "Venice", size: "12'' × 12''", medium: "Acrylic on Canvas", year: "2026", availability: "Available", image: acrylic2, category: "Acrylics" },

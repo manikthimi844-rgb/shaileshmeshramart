@@ -10,7 +10,7 @@ const Workshops = () => (
   <div className="section-spacing">
     <div className="page-container">
       <p className="label-text mb-3"></p>
-      <h1 className="heading-display mb-4">Watercolour Workshops & Mentorship Experience</h1>
+      <h1 className="heading-display mb-3">Watercolour Workshops & Mentorship Experience</h1>
       <p className="heading-sub font-serif mb-6"></p>
       <p className="body-text max-w-2xl mb-14">
        Shailesh has actively conducted watercolour workshops, sharing techniques, creative approaches, and the joy of expressive painting with learners of all levels. His sessions focus on developing compositions, understanding colour harmony, and mastering fluid brushwork.

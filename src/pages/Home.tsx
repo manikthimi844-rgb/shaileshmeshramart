@@ -9,6 +9,7 @@ import wcMarket from "@/assets/watercolor-market.jpg";
 import wcStreet from "@/assets/watercolor-street.jpg";
 import wcWindows from "@/assets/watercolor-windows.jpg";
 import wcGate from "@/assets/watercolor-gate.jpg";
+import wi2 from "@/assets/wi2.jpg";
 import Lightbox from "@/components/Lightbox";
 
 const slides = [
@@ -22,7 +23,8 @@ const watercolorWorks = [
   { title: "Trimbakeshwar, Nashik", medium: "Watercolour on Paper", size: "14.5''×18''", year: "2026", availability: "Available", image: wcStreet },
   { title: "Nagarkhana, Pune", medium: "Watercolour on Paper", size: "11''×8''", year: "2026", availability: "Available", image: wcWindows },
   { title: "Winter Light, Pune", medium: "Watercolour on Paper", size: "11''×8''", year: "2026", availability: "Available", image: wcGate },
-  { title: "Thimi village, Nepal", medium: "Watercolour on Paper", size: "20''×24''", year: "2026", availability: "Available", image: artworkThimi },
+  { title: "Thimi village, Nepal", medium: "Watercolour on Paper", size: "20''×24''", year: "2020", availability: "Available", image: artworkThimi },
+  { title: "Light on Windows", medium: "Watercolour on Paper", size: "8''×8''", year: "2026", availability: "Available", image: wi2 },
 ];
 
 const acrylicWorks = [

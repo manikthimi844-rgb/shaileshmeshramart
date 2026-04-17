@@ -42,7 +42,7 @@ const Exhibitions = () => (
       </p>
 
       {/* Exhibition Images and Upcoming Show */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16 items-start">
         <div className="overflow-hidden bg-muted rounded-sm">
           <img
             src={epf}
@@ -54,25 +54,21 @@ const Exhibitions = () => (
             height={1200}
           />
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <div className="overflow-hidden bg-muted rounded-sm">
             <img
               src={eps}
               alt="Exhibition opening and visitors"
-              className="w-full "
+              className="w-full h-auto"
               loading="lazy"
               width={1600}
               height={2600}
             />
           </div>
           {/* Upcoming Exhibition */}
-          <div className="bg-accent/5 border border-accent/20 rounded-sm p-6 flex flex-col justify-center flex-1">
-            <p className="label-text text-accent mb-3 uppercase tracking-widest">Upcoming</p>
-            <h3 className="heading-display text-base mb-4">Exhibition</h3>
-            <p className="body-text mb-6">
-              <span className="font-semibold">11 – 17 August 2026</span>
-            </p>
-            <p className="body-text text-sm">Jehangir Art Gallery, Mumbai</p>
+          <div className="bg-accent/5 border border-accent/20 rounded-sm px-4 py-3 flex items-center gap-3">
+            <p className="label-text text-accent uppercase tracking-widest text-xs whitespace-nowrap">Upcoming</p>
+            <p className="body-text text-sm flex-1"><span className="font-semibold">11 – 17 Aug 2026</span> · Jehangir Art Gallery, Mumbai</p>
           </div>
         </div>
       </div>

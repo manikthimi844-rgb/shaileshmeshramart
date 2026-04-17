@@ -34,7 +34,7 @@ const shows = [
 const Exhibitions = () => (
   <div className="section-spacing">
     <div className="page-container">
-      <p className="label-text mb-3">Exhibitions & Recognition</p>
+      <p className="label-text mb-3">Exhibitions</p>
       <h1 className="heading-display mb-6">Exhibitions & Awards</h1>
       <p className="body-text max-w-2xl mb-16">
         A journey spanning over three decades — from early recognitions at youth festivals

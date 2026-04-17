@@ -72,7 +72,7 @@ const About = () => (
           src={apd}
           alt="Shailesh painting  "
           style={{
-            width: "75%",
+            width: "85%",
             height: "auto",
             display: "block",
             objectFit: "cover",

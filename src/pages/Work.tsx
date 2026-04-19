@@ -22,7 +22,7 @@ import wcVintagePuneLarge from "@/assets/wc-vintage-pune-large.jpg";
 import wcGodaGhat from "@/assets/wc-goda-ghat.jpg";
 import acrylic1 from "@/assets/1_(2).jpg";
 import acrylic2 from "@/assets/2_(2).jpg";
-import acrylic3 from "@/assets/3_(2).jpg";
+import acrylic3 from "@/assets/3.(2).jpg";
 import acrylic7 from "@/assets/7_(2).jpg";
 import acrylic8 from "@/assets/8_(2).jpg";
 import acrylicPainting from "@/assets/1.jpg";

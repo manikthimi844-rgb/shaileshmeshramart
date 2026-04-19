@@ -8,7 +8,7 @@ import acrylicPco from "@/assets/acrylic-pco.jpg";
 import wcMarket from "@/assets/watercolor-market.jpg";
 import wcStreet from "@/assets/watercolor-street.jpg";
 import wcWindows from "@/assets/watercolor-windows.jpg";
-import wcGate from "@/assets/watercolor-gate.jpg";
+import wcGate from "@/assets/imgww.jpg";
 import wi2 from "@/assets/wi2.jpg";
 import Lightbox from "@/components/Lightbox";
 

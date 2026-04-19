@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import artwork1 from "@/assets/artwork-1.jpg";
-import artworkThimi from "@/assets/artwork-thimi.jpg";
+import artworkThimi from "@/assets/thimi_village_nepal_(1).jpg";
 import acrylic3 from "@/assets/3_(2).jpg";
 import acrylicVenice from "@/assets/acrylic-venice.jpg";
 import acrylicPco from "@/assets/acrylic-pco.jpg";

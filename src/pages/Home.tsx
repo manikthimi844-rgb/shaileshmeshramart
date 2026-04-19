@@ -15,7 +15,7 @@ import Lightbox from "@/components/Lightbox";
 const slides = [
   { image: artwork1, alt: "Auto rickshaws in rain" },
   { image: artworkThimi, alt: "Thimi Village, Nepal" },
-  { image: acrylic3, alt: "wada pune" },
+  { image: wi2, alt: "Light on Windows" },
 ];
 
 const watercolorWorks = [

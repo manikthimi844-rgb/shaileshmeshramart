@@ -192,9 +192,9 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"
-          className="fixed bottom-6 right-6 z-40"
+          className="fixed bottom-6 right-6 z-20"
         >
-          <div className="bg-[#25D366] w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-all duration-300">
+          <div className="bg-[#25D366] w-12 h-12 rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-all duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 32 32"

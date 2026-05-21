@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { FaWhatsapp } from "react-icons/fa";
+
 
 import artwork1 from "@/assets/artwork-1.jpg";
 import artworkThimi from "@/assets/thimi_village_nepal_(1).jpg";

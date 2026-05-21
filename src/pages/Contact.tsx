@@ -50,6 +50,10 @@ const Contact = () => {
               </a>
             </div>
               <div>
+                <p className="label-text mb-1">WhatsApp</p>
+                <a href="https://wa.me/919673468973" target="_blank" rel="noopener noreferrer" className="body-text underline hover:text-foreground transition-colors">+91 96734 68973</a>
+              </div>
+              <div>
                 <p className="label-text mb-1">Based in</p>
                 <p className="body-text">Pune, India</p>
               </div>

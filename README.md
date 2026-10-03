@@ -9,4 +9,4 @@ portfolio  website for a local artist.
 - Deployed on Vercel
 
 ## Live
-https://shaileshmeshm.com  
+https://shaileshmeshram.com  
